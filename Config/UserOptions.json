@@ -1,0 +1,26 @@
+{
+    
+    "conf":[
+        {
+            "link":"/UserOptions/Customize/id={$this->UseDatUser}",
+            "icon": "Brush",
+            "text":"Tema",
+            "description":"Personalizar la aplicación",
+            "id": "AppCustomize"
+        },
+        {
+            "link":"/UserOptions/SetLangUser/id={$this->UseDatUser}",
+            "icon":"Lang",
+            "text":"Cambiar idioma",
+            "description":"Cambiar idioma",
+            "id": "ChangeLang"
+        },
+        {
+            "link":"/UserOptions/ViewInfoApplication/",
+            "icon":"QuestionCircle",
+            "text":"Información de la aplicación",
+            "description":"Información de la aplicación",
+            "id": "AppInfo"
+        }
+    ]
+}

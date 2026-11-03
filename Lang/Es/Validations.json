@@ -1,0 +1,5 @@
+{
+    "errorEmail": "El {{desc}} [{{mail}}], debe contener al menos un signo (@), un punto (.) y un dominio.",
+    "errorName": "El {{desc}} no debe contener números ni caracteres especiales, excepto la tílde.",
+    "errorAddress": "La {{desc}} debe contener únicamente letras, números y estos signos (#, -, /, °)."
+}

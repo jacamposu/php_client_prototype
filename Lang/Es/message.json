@@ -1,0 +1,5 @@
+{
+    "undefined_token":"Token indefinido",
+    "wrong_user_token":"Usuario o Token inválido",
+    "non_validation_token":"No fue posible validar el token de usuario"
+}

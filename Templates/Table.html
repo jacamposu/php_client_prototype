@@ -1,0 +1,42 @@
+<!-- collapsible -->
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        <div class="row" id="content-collapsible"></div>
+    </div>
+</div>
+
+<div class="card px-3 py-2">
+    <!-- navbar -->
+    <div class="row">
+        <div class="col-12">
+            <div class="" role="group" aria-label="Basic checkbox toggle button group" id="navigation_table"></div>
+        </div>
+    </div>
+
+    <!-- table -->
+    <div class="row p-3 bg-white">
+        <div class="table-responsive p-0 mt-3 table-scrooll" id="container_table" style="min-height: 60vh; max-height: 60vh;">
+            <div class="col-md-12 text-center">
+                <small id="response-request" class="text-danger d-none"></small>
+                <section class="content-preload d-none" id="content-preload">
+                    <div class="spinner-border text-primary" role="status" style="width: 2rem; height: 2rem;">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- pagination -->
+    <div class="mt-4">
+        <div class="row">
+            <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <ul class="pagination pagination-primary" id="pagination-table"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hiddens -->
+<input type="hidden" id="urlTable" value="<?= $itemsPage['urlTable'] ?>">
+<input type="hidden" id="loadInfo" value="<?= $itemsPage['loadInfo'] ?>">

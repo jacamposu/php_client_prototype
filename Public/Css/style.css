@@ -1,0 +1,205 @@
+/*@import url('https://fonts.cdnfonts.com/css/poppins');*/
+
+
+
+
+
+/*1. Móviles pequeños (hasta 480px)*/
+@media (max-width: 480px) {
+    :root{
+        --clrbackground: #e2e2e2;
+    }
+}
+
+/*2. Móviles medianos (481px – 767px)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    :root{
+        --clrbackground: #e2e2e2;
+    }
+}
+
+/*3. Tablets (768px – 1024px)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root{
+        --clrbackground: #e2e2e2;
+    }
+}
+
+/*4. Laptops y pantallas medianas (1025px – 1366px*/
+@media (min-width: 1025px) and (max-width: 1366px) {
+    :root{
+        --clrbackground: #e2e2e2;
+    }
+}
+
+/*5. Pantallas grandes / desktop wide (1367px – 1920px)*/
+@media (min-width: 1367px) and (max-width: 1920px) {
+    :root{
+        --clrbackground: #e2e2e2;
+    }
+}
+
+/*6. Ultra wide (1921px en adelante)*/
+@media (min-width: 1921px) {
+    :root{
+        --clrbackground: #e2e2e2;
+    }
+}
+
+
+
+
+*{
+    /* font-family: system-ui; */
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MENU */
+/********/
+
+.link-menu-active
+{
+    /* font-weight: bold; */
+    text-shadow: 2px 2px 5px yellowgreen;
+}
+
+.hide-menu{
+    width: var(--menuHideWd);
+}
+
+.hide-menu-content-main{
+    width: calc(100% - var(--menuHideWd));
+}
+
+
+.text_menu{
+    margin-left: 10px;
+}
+
+/* em{
+    color: darkblue;
+} */
+
+
+
+
+/* TABLES */
+/**********/
+
+th, td {
+	white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.bg-row-selected{
+    background-color:aquamarine;
+}
+
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+.u-options{
+    translate: -300px;
+    width: 350px;
+}
+
+.user_session{
+    width: 30px; 
+    height: 30px; 
+    background-color: #ff4dff; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; 
+    margin-left: 15px;
+}
+
+
+/* SCROLLBAR */
+/*************/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--bgBarInactive); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--bgBarScroll); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--bgBarScrollHover); 
+}
+
+
+
+
+
+/* PROGRESS BAR */
+/****************/
+
+.demo-container-progress-bar {
+  width: 100%;
+  margin: auto;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: rgba(5, 114, 206, 0.2);
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-bar-value {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(5, 114, 206);
+  animation: indeterminateAnimation 1.5s infinite linear;
+  transform-origin: 0% 50%;
+}
+
+
+@keyframes indeterminateAnimation {
+  0% {
+    transform:  translateX(0) scaleX(0);
+  }
+  40% {
+    transform:  translateX(0) scaleX(0.4);
+  }
+  100% {
+    transform:  translateX(100%) scaleX(0.5);
+  }
+}
+
+
+
+
+

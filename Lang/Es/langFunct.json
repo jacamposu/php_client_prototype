@@ -1,0 +1,18 @@
+{
+    "inhUserExists": "el usuario {{userCreate}} no puede heredar la perfilación del usuario {{userInherit}}, porque ya tiene una perfilación asociada.",
+    "inhUserNotExists": "El usuario {{userInherit}} no existe o no tiene una perfilación creada.",
+    "loadFileErrorSize": "No se puede cargar el archivo ({{fileName}}) por tiene un tamaño de ({{sizeFileUploaded}}) kb.",
+    "profilingCreated": "Perfilación del usuario {{userCreate}}, generada con exito",
+    "emptyField": "El campo [{{desc}}] es obligatorio.",
+    "errorDataType": "El dato [{{value}}] del campo [{{field}}] no es correcto para un tipo de dato [{{datatype}}].>",
+    "exceedsLength": "El valor del campo [{{desc}}] excede el número de caracteres permitido [{{length}}].",
+    "helpProfiles": "Elija el recurso, seleccione la opción [<strong>Editar perfil</strong>] y asigne los permisos correspondientes al usuario: ({{recordEdit}} - {{userDesc}})",
+    "pagination": "Mostrando registros del {{startFrom}} al {{to}} de {{rowsTable}} registros. Página ({{startPage}}/{{finalPage}})",
+    "validateLength": "Por favor asegúrese que la descripción no tenga mas de [{{max}}] caracteres.",
+    "validatePassword": "La [{{desc}}] debe tener entre [{{min}}] y [{{max}}] caracteres, debe tener al menos una letra minúscula, una letra mayúscula y un caracter numérico.",
+    "wrongDate": "Fecha incorrecta [{{value}}] para el campo [{{field}}].",
+    "wrongDateDesc": "La Fecha [{{date}}] del campo [{{desc}}] es incorrecta, verifique que la fecha no sea inferior a [{{minYear}}] y que corresponda al formato (yyyy-mm-dd).",
+    "strDeleteRecord": "El registro [{{recordEdit}}] no se puede eliminar porque tiene [{{count}}] registros relacionados en la tabla [{{table}}]",
+    "homeWelcome": "Bienvenido, {{username}}",
+    "homeDescription": "Hemos creado una aplicación que puede ayudarte en todas éstas cosas:"
+}

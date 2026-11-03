@@ -1,0 +1,1214 @@
+{
+	"affectMenuProile":{
+		"desc":"Menu afectar",
+		"helpField":""
+	},
+	"AliDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"AliId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"AliStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"AppStyCssStyle":{
+		"desc":"Estilo Css",
+		"helpField":""
+	},
+	"AppStyDescription":{
+		"desc":"Tema",
+		"helpField":""
+	},
+	"AppStyId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"AppStyStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"AppStyUrlImage":{
+		"desc":"Url imagen",
+		"helpField":""
+	},
+	"ChaBefore":{
+		"desc":"Antes (Update, Delete)",
+		"helpField":""
+	},
+	"ChaClientIP":{
+		"desc":"Ip Cliente",
+		"helpField":""
+	},
+	"ChaDatetime":{
+		"desc":"Fecha y hora",
+		"helpField":""
+	},
+	"ChaId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"ChaLater":{
+		"desc":"Despues (Insert, Update)",
+		"helpField":""
+	},
+	"ChaQueryType":{
+		"desc":"Tipo de transaccion",
+		"helpField":""
+	},
+	"ChaSqlQuery":{
+		"desc":"SQL",
+		"helpField":""
+	},
+	"ChaStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"ChaTable":{
+		"desc":"Tabla afectada",
+		"helpField":""
+	},
+	"ChaUser":{
+		"desc":"Usuario",
+		"helpField":""
+	},
+	"CitId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"CitName":{
+		"desc":"Nombre municipio",
+		"helpField":""
+	},
+	"CitState":{
+		"desc":"Departamento",
+		"helpField":""
+	},
+	"CitStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"ConPssAccessNumber":{
+		"desc":"Nro acceso",
+		"helpField":""
+	},
+	"ConPssDateCreation":{
+		"desc":"Fecha de creacion de la contrasena",
+		"helpField":""
+	},
+	"ConPssId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"ConPssPassword":{
+		"desc":"Contrasena",
+		"helpField":""
+	},
+	"ConPssStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"ConPssUser":{
+		"desc":"Usuario",
+		"helpField":""
+	},
+	"CouId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"CouName":{
+		"desc":"Nombre pais",
+		"helpField":""
+	},
+	"CouStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"DateRepository":{
+		"desc":"Fecha modificacion",
+		"helpField":""
+	},
+	"DicAlign":{
+		"desc":"Alineacion",
+		"helpField":""
+	},
+	"DicDependentList":{
+		"desc":"Lista dependiente",
+		"helpField":"Campo tipo select dependiente de otro"
+	},
+	"DicDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"DicDisabled":{
+		"desc":"Deshabilitado",
+		"helpField":""
+	},
+	"DicFieldName":{
+		"desc":"Nombre del campo",
+		"helpField":"Nombre de campo en base de datos"
+	},
+	"DicFieldType":{
+		"desc":"Tipo de campo",
+		"helpField":"Tipo de campo en base de datos"
+	},
+	"DicFormat":{
+		"desc":"Formato",
+		"helpField":""
+	},
+	"DicHelpField":{
+		"desc":"Campo de ayuda",
+		"helpField":""
+	},
+	"DicIcon":{
+		"desc":"Icono",
+		"helpField":""
+	},
+	"DicId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"DicInputType":{
+		"desc":"Tipo de campo tabla",
+		"helpField":"Forma como se presenta la informacion en la tabla"
+	},
+	"DicInputTypeForm":{
+		"desc":"Tipo de campo formulario",
+		"helpField":"Definicion del campo de formulario"
+	},
+	"DicLength":{
+		"desc":"Longitud",
+		"helpField":"Numero de caracteres permitidos en base de datos"
+	},
+	"DicMsgHelp":{
+		"desc":"Mensaje de ayuda",
+		"helpField":""
+	},
+	"DicPattern":{
+		"desc":"Pattern",
+		"helpField":""
+	},
+	"DicReadOnly":{
+		"desc":"Solo lectura",
+		"helpField":""
+	},
+	"DicRequired":{
+		"desc":"Obligatorio",
+		"helpField":""
+	},
+	"DicStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"DicTable":{
+		"desc":"Tabla",
+		"helpField":"Nombre de tabla en base de datos"
+	},
+	"DicTextareaChars":{
+		"desc":"Caracteres textarea",
+		"helpField":""
+	},
+	"DicTextareaRows":{
+		"desc":"Filas textarea",
+		"helpField":""
+	},
+	"DicUnsigned":{
+		"desc":"Sin signo",
+		"helpField":"Acepta o no valores negativos"
+	},
+	"DicValidationForm":{
+		"desc":"Validaciones de formulario",
+		"helpField":"Validaciones POST PHP"
+	},
+	"DirDateCreation":{
+		"desc":"Fecha de creacion",
+		"helpField":""
+	},
+	"DirDateModify":{
+		"desc":"Fecha de modificacion",
+		"helpField":""
+	},
+	"Directories":{
+		"desc":"Directorios",
+		"helpField":""
+	},
+	"DirId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"DirName":{
+		"desc":"Nombre directorio",
+		"helpField":""
+	},
+	"DirOwner":{
+		"desc":"Propietario recurso",
+		"helpField":""
+	},
+	"DirParentDirectory":{
+		"desc":"Padre",
+		"helpField":""
+	},
+	"DirStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"FieTypDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"FieTypId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"FieTypStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"FilDateUpload":{
+		"desc":"Fecha modificacion",
+		"helpField":""
+	},
+	"FilDirectory":{
+		"desc":"Directorio",
+		"helpField":""
+	},
+	"FilFileName":{
+		"desc":"Nombre archivo",
+		"helpField":""
+	},
+	"FilFileNameServer":{
+		"desc":"Nombre de archivo almacenado",
+		"helpField":""
+	},
+	"FilId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"FilOwner":{
+		"desc":"Propietario",
+		"helpField":""
+	},
+	"FilSize":{
+		"desc":"Tamano",
+		"helpField":""
+	},
+	"FilStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"FilSubdirectory":{
+		"desc":"Sub directorio",
+		"helpField":""
+	},
+	"FilType":{
+		"desc":"Tipo archivo",
+		"helpField":""
+	},
+	"FilUnit":{
+		"desc":"Unidad de medida",
+		"helpField":""
+	},
+	"FilVersion":{
+		"desc":"Version",
+		"helpField":""
+	},
+	"FullNameUsers":{
+		"desc":"Usuario",
+		"helpField":""
+	},
+	"IcoFontAwesome":{
+		"desc":"Fuente icono",
+		"helpField":""
+	},
+	"IcoGroDescription":{
+		"desc":"Description",
+		"helpField":""
+	},
+	"IcoGroId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"IcoGroStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"IcoGroup":{
+		"desc":"Grupo de icono",
+		"helpField":""
+	},
+	"IcoName":{
+		"desc":"Fuente y nombre del icono",
+		"helpField":""
+	},
+	"IcoStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"IdeTypDescription":{
+		"desc":"Tipo identificacion",
+		"helpField":""
+	},
+	"IdeTypId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"IdeTypStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"InpTypDescription":{
+		"desc":"Description",
+		"helpField":""
+	},
+	"InpTypFrmDescription":{
+		"desc":"Tipo de campo",
+		"helpField":""
+	},
+	"InpTypFrmId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"InpTypFrmStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"InpTypId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"InpTypStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"JsEnglish":{
+		"desc":"Ingles",
+		"helpField":""
+	},
+	"JsItem":{
+		"desc":"Item",
+		"helpField":""
+	},
+	"JsSpanish":{
+		"desc":"Espanol",
+		"helpField":""
+	},
+	"JsStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"KeyNew":{
+		"desc":"nueva contrasena",
+		"helpField":"Debe contener al menos: 1 mayuscula, 1 minuscula, 1 numero, no ser inferior a 6 caracteres ni superior a 16 caracteres"
+	},
+	"KeyOld":{
+		"desc":"contrasena anterior",
+		"helpField":""
+	},
+	"KeyVerify":{
+		"desc":"Confirme nueva contrasena",
+		"helpField":"Debe contener al menos: 1 mayuscula, 1 minuscula, 1 numero, no ser inferior a 6 caracteres ni superior a 16 caracteres"
+	},
+	"LanDicEnglishDesc":{
+		"desc":"Descripcion en Ingles",
+		"helpField":""
+	},
+	"LanDicEnglishHelp":{
+		"desc":"Mensaje de ayuda en Ingles",
+		"helpField":""
+	},
+	"LanDicField":{
+		"desc":"Campo de base de datos",
+		"helpField":""
+	},
+	"LanDicSpanishDesc":{
+		"desc":"Descripcion en Espanol",
+		"helpField":""
+	},
+	"LanDicSpanishHelp":{
+		"desc":"Mensaje de ayuda en Espanol",
+		"helpField":""
+	},
+	"LanDicStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"LanFunEnglish":{
+		"desc":"Mensaje retorno en Ingles",
+		"helpField":""
+	},
+	"LanFunFuncName":{
+		"desc":"Nombre de la funcion",
+		"helpField":""
+	},
+	"LanFunParams":{
+		"desc":"Parametros de la funcion",
+		"helpField":"Escriba los parametros separados por coma y su correspondiente signo $"
+	},
+	"LanFunSpanish":{
+		"desc":"Mensaje retorno en Espanol",
+		"helpField":""
+	},
+	"LanFunStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"LanId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"LanLanguage":{
+		"desc":"Idioma",
+		"helpField":""
+	},
+	"LanMeIdResource":{
+		"desc":"Id del recurso",
+		"helpField":""
+	},
+	"LanMenEnglish":{
+		"desc":"Ingles",
+		"helpField":""
+	},
+	"LanMenSpanish":{
+		"desc":"Espanol",
+		"helpField":""
+	},
+	"LanMenStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"LanResEnglish":{
+		"desc":"Ingles",
+		"helpField":""
+	},
+	"LanResItem":{
+		"desc":"Item",
+		"helpField":""
+	},
+	"LanResResource":{
+		"desc":"Recurso",
+		"helpField":""
+	},
+	"LanResSpanish":{
+		"desc":"Espanol",
+		"helpField":""
+	},
+	"LanResStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"LanStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"LoadPhoto":{
+		"desc":"Cargue su fotografia",
+		"helpField":""
+	},
+	"LogAttempt":{
+		"desc":"Direccion ip intento",
+		"helpField":""
+	},
+	"LogDatetime":{
+		"desc":"Fecha hora",
+		"helpField":""
+	},
+	"LogId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"LogProblem":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"LogStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"LogUser":{
+		"desc":"Usuario",
+		"helpField":""
+	},
+	"MaiDatetime":{
+		"desc":"Fecha hora",
+		"helpField":""
+	},
+	"MaiFiles":{
+		"desc":"Archivos",
+		"helpField":""
+	},
+	"MaiFrom":{
+		"desc":"De",
+		"helpField":""
+	},
+	"MaiId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"MaiMessage":{
+		"desc":"Mensaje",
+		"helpField":""
+	},
+	"MaiResponse":{
+		"desc":"Error",
+		"helpField":""
+	},
+	"MaiStatus":{
+		"desc":"Estado del correo",
+		"helpField":""
+	},
+	"MaiStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"MaiSubject":{
+		"desc":"Asunto",
+		"helpField":""
+	},
+	"MaiTo":{
+		"desc":"Para",
+		"helpField":""
+	},
+	"MenColorIcon":{
+		"desc":"Color del icono",
+		"helpField":""
+	},
+	"MenGroColorIcon":{
+		"desc":"Color del icono",
+		"helpField":""
+	},
+	"MenGroIcon":{
+		"desc":"Icono",
+		"helpField":""
+	},
+	"MenGroId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"MenGroName":{
+		"desc":"Nombre",
+		"helpField":""
+	},
+	"MenGroOrder":{
+		"desc":"Orden",
+		"helpField":""
+	},
+	"MenGroState":{
+		"desc":"Estado",
+		"helpField":""
+	},
+	"MenGroStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"MenIcon":{
+		"desc":"Icono del menu",
+		"helpField":""
+	},
+	"MenId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"MenMenuType":{
+		"desc":"Tipo de menu",
+		"helpField":"Seleccione el tipo de menu a crear"
+	},
+	"MenName":{
+		"desc":"Nombre",
+		"helpField":"Indique el nombre que va a tener el enlace"
+	},
+	"MenOrder":{
+		"desc":"Orden",
+		"helpField":""
+	},
+	"MenParams":{
+		"desc":"Parametros url",
+		"helpField":""
+	},
+	"MenParent":{
+		"desc":"Id padre",
+		"helpField":""
+	},
+	"MenParentMenu":{
+		"desc":"Menu padre",
+		"helpField":"Elija a que grupo va a pertenecer el submenu"
+	},
+	"MenSQLTable":{
+		"desc":"Tabla menu",
+		"helpField":"Indique la tabla que va a afectar el recurso"
+	},
+	"MenState":{
+		"desc":"Activar",
+		"helpField":"Indique si el menu queda activo o inactivo"
+	},
+	"MenStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"MenUrl":{
+		"desc":"Url",
+		"helpField":""
+	},
+	"MimColor":{
+		"desc":"Color",
+		"helpField":""
+	},
+	"MimDocumentType":{
+		"desc":"Tipo de documento",
+		"helpField":""
+	},
+	"MimExtension":{
+		"desc":"Extension",
+		"helpField":""
+	},
+	"MimIcon":{
+		"desc":"Icono",
+		"helpField":""
+	},
+	"MimId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"MimStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"MimTypeMime":{
+		"desc":"Tipo mime",
+		"helpField":""
+	},
+	"MsgLogDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"MsgLogId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"MsgStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"NameRepository":{
+		"desc":"Nombre",
+		"helpField":""
+	},
+	"OwnDirDirectory":{
+		"desc":"Directorio",
+		"helpField":""
+	},
+	"OwnDirId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"OwnDirOwner":{
+		"desc":"Propietario",
+		"helpField":""
+	},
+	"OwnDirStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"OwnDirTypeOwner":{
+		"desc":"Tipo de propietario",
+		"helpField":""
+	},
+	"OwnerRepository":{
+		"desc":"Propietario",
+		"helpField":""
+	},
+	"OwnFilFile":{
+		"desc":"Archivo",
+		"helpField":""
+	},
+	"OwnFilId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"OwnFilOwner":{
+		"desc":"Propietario",
+		"helpField":""
+	},
+	"OwnFilStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"OwnFilTypeOwner":{
+		"desc":"Tipo de propietario",
+		"helpField":""
+	},
+	"ProCreate":{
+		"desc":"Escritura",
+		"helpField":""
+	},
+	"ProDelete":{
+		"desc":"Borrado",
+		"helpField":""
+	},
+	"ProId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"ProJoin":{
+		"desc":"Condicion join",
+		"helpField":""
+	},
+	"ProMenu":{
+		"desc":"Tipo menu",
+		"helpField":""
+	},
+	"ProRead":{
+		"desc":"Lectura",
+		"helpField":""
+	},
+	"ProReports":{
+		"desc":"Descargar reportes",
+		"helpField":""
+	},
+	"ProStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"ProUpdate":{
+		"desc":"Edicion",
+		"helpField":""
+	},
+	"ProUserType":{
+		"desc":"Tipo usuario",
+		"helpField":""
+	},
+	"ProVisibleMenu":{
+		"desc":"Activar menu?",
+		"helpField":""
+	},
+	"ProWhere":{
+		"desc":"Condicion where",
+		"helpField":""
+	},
+	"QueDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"QueId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"QueStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"RepDatetime":{
+		"desc":"Fecha y hora",
+		"helpField":""
+	},
+	"RepId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"RepIp":{
+		"desc":"Ip del usuario",
+		"helpField":""
+	},
+	"RepResource":{
+		"desc":"Recurso",
+		"helpField":""
+	},
+	"RepStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"RepTypeFile":{
+		"desc":"Tipo de archivo",
+		"helpField":""
+	},
+	"RepUser":{
+		"desc":"Usuario",
+		"helpField":""
+	},
+	"SecQueDescription":{
+		"desc":"Pregunta",
+		"helpField":""
+	},
+	"SecQueId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"SecQueStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"SetDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"SetId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"SetStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"SetValue":{
+		"desc":"Valor",
+		"helpField":""
+	},
+	"SqlDatetime":{
+		"desc":"Fecha y hora de la ejecucion",
+		"helpField":""
+	},
+	"SqlId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"SqlIp":{
+		"desc":"Ip del usuario",
+		"helpField":""
+	},
+	"SqlQuery":{
+		"desc":"Consulta ejecutada",
+		"helpField":""
+	},
+	"SqlQueryType":{
+		"desc":"Tipo de consulta",
+		"helpField":""
+	},
+	"SqlStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"SqlTable":{
+		"desc":"Tabla afectada",
+		"helpField":""
+	},
+	"SqlUser":{
+		"desc":"Usuario que afecto el registro",
+		"helpField":""
+	},
+	"StaCountry":{
+		"desc":"Pais",
+		"helpField":""
+	},
+	"StaId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"StaName":{
+		"desc":"Nombre departamento",
+		"helpField":""
+	},
+	"StaStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"TipTexId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"TypeDocRepository":{
+		"desc":"Tipo documental",
+		"helpField":""
+	},
+	"typeUserProfile":{
+		"desc":"Tipo de usuario",
+		"helpField":""
+	},
+	"TypOwnDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"TypOwnId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"TypOwnStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"TypTexDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"TypTexStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"UseAppStyle":{
+		"desc":"Estilo aplicacion",
+		"helpField":""
+	},
+	"UseChangePassReq":{
+		"desc":"Cambio de contrasena obligatorio",
+		"helpField":""
+	},
+	"UseDatAddress":{
+		"desc":"Direccion de residencia",
+		"helpField":"Por favor escriba su direccion de residencia actual y mantengala siemper actualizada"
+	},
+	"UseDatBirthdate":{
+		"desc":"Fecha de nacimiento",
+		"helpField":"Seleccione en el datepicker su fecha de nacimiento empezando por año, mes, dia"
+	},
+	"UseDatCellphone":{
+		"desc":"Numero de celular",
+		"helpField":"Escriba los diez digitos de su numero de celular"
+	},
+	"UseDatCitie":{
+		"desc":"Municipio residencia",
+		"helpField":"Indique su ciudad/municipio o condado de residencia actual"
+	},
+	"UseDatCountry":{
+		"desc":"Pais residencia",
+		"helpField":"Indique su pais de residencia actual"
+	},
+	"UseDateCreation":{
+		"desc":"Fecha de creacion usuario",
+		"helpField":""
+	},
+	"UseDatId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"UseDatIdeType":{
+		"desc":"Tipo de identificacion",
+		"helpField":"Seleccione el tipo de identificacion que actualmente posee en su pais de residencia"
+	},
+	"UseDatIdNumber":{
+		"desc":"Numero de identificacion",
+		"helpField":"Escriba su numero de identificacion (Solo numeros, sin puntos ni caracteres especiales)"
+	},
+	"UseDatState":{
+		"desc":"Departamento residencia",
+		"helpField":"Indique su departamento o estado de residencia actual"
+	},
+	"UseDatStatusProcess":{
+		"desc":"Estado del tramite",
+		"helpField":""
+	},
+	"UseDatUser":{
+		"desc":"Usuario",
+		"helpField":""
+	},
+	"UseEmail":{
+		"desc":"Correo electronico",
+		"helpField":"El correo electronico debe contener al menos de un simbolo (@) un punto (.) y un dominio"
+	},
+	"UseEncryptedId":{
+		"desc":"Id usuario encriptado",
+		"helpField":""
+	},
+	"UseFailedAttempts":{
+		"desc":"Intentos fallidos",
+		"helpField":""
+	},
+	"UseFirtsName":{
+		"desc":"Primer nombre",
+		"helpField":""
+	},
+	"UseGroDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"UseGroId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"UseGroStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"UseId":{
+		"desc":"Id usuario",
+		"helpField":"Este valor corresponde al nombre de usuario con el que iniciará sesion"
+	},
+	"UseLang":{
+		"desc":"idioma del usuario",
+		"helpField":""
+	},
+	"UseLastAccess":{
+		"desc":"Ultimo acceso",
+		"helpField":""
+	},
+	"UseLastIp":{
+		"desc":"Ultima ip",
+		"helpField":""
+	},
+	"UsePassword":{
+		"desc":"Contrasena",
+		"helpField":"Debe contener al menos: 1 mayuscula, 1 minuscula, 1 numero, no ser inferior a 6 caracteres ni superior a 16 caracteres"
+	},
+	"UsePhoto":{
+		"desc":"Fotografia",
+		"helpField":""
+	},
+	"UserGroups":{
+		"desc":"Grupo de usuarios",
+		"helpField":""
+	},
+	"UserList":{
+		"desc":"Seleccione usuario",
+		"helpField":""
+	},
+	"UseSecondName":{
+		"desc":"Segundo nombre",
+		"helpField":""
+	},
+	"UseSecondSurname":{
+		"desc":"Segundo apellido",
+		"helpField":""
+	},
+	"UseSecurityQuestion1":{
+		"desc":"Pregunta de seguridad para cambio clave",
+		"helpField":""
+	},
+	"UseSecurityQuestion2":{
+		"desc":"Pregunta seguridad 2",
+		"helpField":""
+	},
+	"UseSecurityQuestion3":{
+		"desc":"Pregunta seguridad 3",
+		"helpField":""
+	},
+	"UseSecurityResponse1":{
+		"desc":"Respuesta a pregunta de seguridad",
+		"helpField":""
+	},
+	"UseSecurityResponse2":{
+		"desc":"Respuesta pregunta seguridad",
+		"helpField":""
+	},
+	"UseSecurityResponse3":{
+		"desc":"Responda la siguiente pregunta",
+		"helpField":""
+	},
+	"UseStaDescription":{
+		"desc":"Descripcion",
+		"helpField":""
+	},
+	"UseStaId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"UseStaStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"UseStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"UseSurname":{
+		"desc":"Primer apellido",
+		"helpField":""
+	},
+	"UseTokenId":{
+		"desc":"Token",
+		"helpField":""
+	},
+	"UseTypDescription":{
+		"desc":"Tipo usuario",
+		"helpField":""
+	},
+	"UseTypId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"UseTypStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"UseTypUserGroup":{
+		"desc":"Grupo usuario",
+		"helpField":""
+	},
+	"UseUserStatus":{
+		"desc":"Estado usuario",
+		"helpField":""
+	},
+	"UseUserType":{
+		"desc":"Tipo usuario",
+		"helpField":""
+	},
+	"VerFilFile":{
+		"desc":"Archivo",
+		"helpField":""
+	},
+	"VerFilId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"VerFilNumVersion":{
+		"desc":"Numero de version",
+		"helpField":""
+	},
+	"VerFilStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"WikContent":{
+		"desc":"Contenido",
+		"helpField":""
+	},
+	"WikId":{
+		"desc":"Id",
+		"helpField":""
+	},
+	"WikParentTitle":{
+		"desc":"Titulo padre",
+		"helpField":""
+	},
+	"WikStatusProcess":{
+		"desc":"Status process",
+		"helpField":""
+	},
+	"WikSubtitle":{
+		"desc":"Subtitulo",
+		"helpField":""
+	},
+	"WikTitle":{
+		"desc":"Titulo",
+		"helpField":""
+	},
+	"WikTypeContent":{
+		"desc":"Tipo de contenido",
+		"helpField":""
+	},
+	"Lancreated_at":{
+		"desc":"********************",
+		"helpField":""
+	},
+	"created_at":{
+		"desc":"********************",
+		"helpField":""
+	},
+	"UseSecurityResponse":{
+		"desc":"********************",
+		"helpField":""
+	},
+	"UseSecurityQuestion":{
+		"desc":"********************",
+		"helpField":""
+	},
+	"username":{
+		"desc":"Nombre de usuario",
+		"helpField":"Agrege sus credenciales de acceso al sistema"
+	},
+	"password":{
+		"desc":"Contraseña",
+		"helpField":"Agrege sus credenciales de acceso al sistema"
+	},
+	"LoginIdeType":{
+		"desc":"Tipo de identificación",
+		"helpField":"Agrege sus credenciales de acceso al sistema"
+	},
+	"LoginIdeNumber":{
+		"desc":"Número de identificación",
+		"helpField":"Agrege sus credenciales de acceso al sistema"
+	},
+	"LoginMail":{
+		"desc":"Correo electrónico",
+		"helpField":"Agrege sus credenciales de acceso al sistema"
+	}
+}

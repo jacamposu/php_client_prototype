@@ -1,0 +1,567 @@
+{
+    "Ajax": {
+        "GetCities": "Seleccione municipio",
+        "GetState": "Seleccione departamento"
+    },
+    "AlertCode": {
+        "100": "Registro ya existe.",
+        "101": "Procesamiento de datos.",
+        "200": "Ok",
+        "201": "Creado",
+        "202": "Aceptado",
+        "300": "Redireccionamiento",
+        "400": "Datos enviados incompletos o con formato incorrecto",
+        "401": "No autorizado",
+        "402": "Algo",
+        "403": "Prohibido",
+        "404": "No encontrado",
+        "405": "Método no permitido",
+        "500": "Error interno del servidor"
+    },
+    "Align": {
+        "Subtitle": "Tipos de alineacion en las vistas tipo tabla",
+        "Title": "Alinear elementos"
+    },
+    "ChangePhoto": {
+        "EventClick": "Clic para cambiar la fotografia",
+        "Subtitle": "Por favor agregue una fotografia a su perfil",
+        "Title": "Cambio de fotografia"
+    },
+    "ChangesBD": {
+        "Subtitle": "Verifique quien ha realizado cambios en la base de datos",
+        "Title": "Log de cambios en base de datos"
+    },
+    "Cities": {
+        "Subtitle": "Agregue las ciudades y municipios de su pais",
+        "Title": "Municipios / Ciudades"
+    },
+    "ControlPassword": {
+        "Subtitle": "Log de registro de actividad en cambio de contraseñas",
+        "Title": "Gestion de contraseñas"
+    },
+    "Countries": {
+        "Subtitle": "Agrege los nombres de los paises en los que opera su empresa",
+        "Title": "Paises"
+    },
+    "Dashboard": {
+        "Subtitle": "Graficas del sistema",
+        "Title": "Dashboard"
+    },
+    "Dictionary": {
+        "Subtitle": "Un espacio para configurar la herramienta",
+        "Title": "Diccionario de datos"
+    },
+    "Directories": {
+        "Subtitle": "Gestiones sus directorios",
+        "Title": "Listado de directorios"
+    },
+    "Error": {
+        "DownloadFailed": "El archivo no puede ser visualizado. Por favor descarguelo.",
+        "DownloadsDiffTable": "No se puede descargar el formato",
+        "FileNotCreated": "Hubo problemas con la creacion del archivo",
+        "FilesErrorEmptyFile": "Por favor agregue una imagen.",
+        "FilesErrorJpg": "Solo se permiten imagenes con extension jpg",
+        "FilesErrorLoadFile": "Ocurrio un error al intentar subir el documento.",
+        "FilesErrorLoadFile1": "El tamaño del archivo cargado supera el maximo valor especificado en el archivo php.ini con la directriz (upload_max_filesize",
+        "FilesErrorLoadFile2": "El tamaño del archivo cargado supera el valor maximo especificado en el formulario HTML del elemento MAX_FILE_SIZE",
+        "FilesErrorLoadFile3": "El archivo se ha cargado parcialmente",
+        "FilesErrorLoadFile4": "No se ha cargado ningun archivo",
+        "NonDeleteRecord": "El registro no pudo ser borrado ",
+        "NotAvailable": "Recurso no disponible para el usuario",
+        "NotProfileCreated": "Tuvimos algun error desconocido en la creacion del perfil del usuario. Por favor comuniquese con el administrador del sistema.",
+        "PasswordBad": "La nueva contraseña no cumple con los criterios minimos establecidos. {Debe contener al menos: 1 mayuscula, 1 minuscula, 1 numero, no ser inferior a 6 caracteres ni superior a 16 caracteres}",
+        "PasswordExists": "La nueva contraseña ya existe.",
+        "PasswordIncorrect": "La contraseña actual es incorrecta",
+        "PasswordNotMatch": "La nueva contraseña y la contraseña de confirmacion no coinciden",
+        "ProfileExist": "El perfil no fue creado porque es probable que ya exista.",
+        "RestrictedAccessCreate": "No tiene permisos para crear este recurso.",
+        "RestrictedAccessDelete": "No tiene permisos para eliminar este recurso.",
+        "RestrictedAccessDownloads": "No tiene permisos para descargar reportes",
+        "RestrictedAccessRead": "No tiene permisos para ver este recurso.",
+        "RestrictedAccessUpdate": "No tiene permisos para editar este recurso.",
+        "DatabaseQuery": "Se ha producido un error de base de datos, por favor contacte a su administrador del sistema. Por favor compartanos el id del error que le aparece anteriormente. Gracias por su ayuda."
+    },
+    "FieldType": {
+        "Subtitle": "Tipos de campos de la base de datos",
+        "Title": "Tipos de campos BD"
+    },
+    "Files": {
+        "AddInput": "Agregar un nuevo input de carga",
+        "DeleteFile": "Borrar el archivo seleccionado",
+        "SelectFile": "Seleccione un archivo",
+        "Subtitle": "Gestione sus documentos",
+        "Title": "Listado de archivos"
+    },
+    "GalleryIcons": {
+        "Subtitle": "Visualice todos los iconos de la aplicacion",
+        "Title": "Galeria de iconos"
+    },
+    "Home": {
+        "Subtitle": "Página de inicio",
+        "Title": "Home"
+    },
+    "Icons": {
+        "OptShowName": "Ver Galeria",
+        "OptShowTitle": "Ver galeria de iconos",
+        "Subtitle": "Agregue los iconos que desea tener en el proyecto",
+        "Title": "Galeria de iconos"
+    },
+    "IconsGroup": {
+        "Subtitle": "Permite agrupar los iconos por categorias",
+        "Title": "Grupos de iconos"
+    },
+    "IdentificationTypes": {
+        "Subtitle": "Gestione los tipos de documentos de los usuarios",
+        "Title": "Tipos de Identificacion de usuarios"
+    },
+    "Info": {
+        "AppSlogan": "Innovacion de hoy para el exito del manana.",
+        "CaptionTable": "Listado de registros de tabla: ",
+        "EmptyFieldsDwn": "Seleccione al menos una columna",
+        "EmptyResult": "¡Vaya! No hay ningun resultado.",
+        "GoToHome": "Inicio",
+        "Greeting": "Hola",
+        "Help": "Usuario",
+        "Logout": "Salir",
+        "ModalCriteriaSearch": "Criterio de busqueda: ",
+        "MsgHelpUser": "Ayudanos a mejorar tu perfil",
+        "MsgHelpGrid": "Informacion importante",
+        "NameColumnAction": "Accion",
+        "NameTable": "Nombre tabla: ",
+        "NumPage": "Numero de pagina: ",
+        "NumRowsDB": "Numero de registros en base de datos: ",
+        "PageInConstruction": "Pagina en construccion",
+        "PageInConstructionMsg": "Esta pagina se encuentra en construccion actualmente",
+        "popupUpdateProfiling": "Actualizar perfil",
+        "recaptchaText": "Demuestra que no eres un robot",
+        "Required": "Obligatorio",
+        "RequiredFieldTitle": "Indica campo requerido",
+        "SetLangUser": "Establezca un idioma por defecto para el usuario o en el archivo de configuracion",
+        "ShowAllRecords": "Ver todo",
+        "SortTable": "Ordenar Tabla",
+        "SortView": "Ordenar Vista",
+        "TitleFormLoadFiles": "Formulario de carga de archivos",
+        "TitleImgView": "Vista de imagen",
+        "TitleLogout": "Cerrar sesion",
+        "TitleModalDownloads": "Descargar este contenido",
+        "TitlePage": "Titulo pagina: ",
+        "TitleSecQuestion": "Ajuste su perfil y responda la pregunta de seguridad",
+        "TotalPages": "Total de paginas: ",
+        "ViewTitleViewList": "Vista Registro",
+        "TextCharsTextarea": "caracteres",
+        "DatabaseQueryError": "Oops! SQL syntax error detected."
+    },
+    "InheritProfiling": {
+        "MsgHelpForm": "seleccione el tipo de usuario del que desea heredar la perfilacion y luego haga clic en el boton {heredar perfilacion}",
+        "SubmitInhProfiling": "Heredar Perfilacion",
+        "Subtitle": "Herede la perfilacion de otros usuarios",
+        "Title": "Heredar perfilacion"
+    },
+    "Input": {
+        "DefaultValueSelect": "Seleccione",
+        "Opt1RadioSearch": "Coincidir",
+        "Opt2RadioSearch": "Identico"
+    },
+    "InputType": {
+        "Subtitle": "Define la forma como se presenta la informacion en las tablas",
+        "Title": "Tipos de inputs"
+    },
+    "InputTypeForm": {
+        "Subtitle": "Lista de inputs para formularios",
+        "Title": "Tipos de inputs para formularios"
+    },
+    "Lang": {
+        "Subtitle": "Establezca los idiomas que tendra la aplicacion",
+        "Title": "Idiomas de la aplicacion"
+    },
+    "LangDictionary": {
+        "Subtitle": "Definicion de campos de la base de datos",
+        "Title": "Idioma diccionario"
+    },
+    "LangFunct": {
+        "Subtitle": "Algunas funciones deben retornan mensajes en sus correspondientes idiomas",
+        "Title": "Idioma Funciones"
+    },
+    "LangJS": {
+        "Subtitle": "Establezca el idioma para el lenguaje JavaScript",
+        "Title": "Idioma JavaScript"
+    },
+    "LangMenu": {
+        "Subtitle": "Establezca el idioma para el menu",
+        "Title": "Idioma Menu"
+    },
+    "LangResources": {
+        "Subtitle": "Establezca el idioma que tendran cada uno de los recursos",
+        "Title": "Idioma recursos"
+    },
+    "Link": {
+        "btnSaveProfiling": "Guardar perfilacion",
+        "DescBtnShowAllRecords": "Ver todo",
+        "ebnDeleteRecord": "Eliminar",
+        "ebnEditRecord": "Editar",
+        "ebnInfoRecord": "Ver",
+        "ebtDeleteRecord": "Eliminar este registro",
+        "ebtEditRecord": "Editar este registro",
+        "ebtInfoRecord": "Ver este registro",
+        "FormBtnAdd": "Agregar",
+        "FormBtnCancel": "Regresar",
+        "FormBtnEdit": "Editar",
+        "FormBtnLoadFile": "Cargar archivo",
+        "NameButtonMassiveContent": "Importar ",
+        "NameButtonShowColumns": "Columnas ",
+        "obnAddRecord": "Agregar",
+        "obnGenerateFile": "Generar archivo",
+        "obtAddRecord": "Nuevo",
+        "obtGenerateFileDic": "Generar archivo Diccionario",
+        "obtGenerateFileFunct": "Generar archivo idioma funciones",
+        "obtGenerateFileIcons": "Generar archivo Iconos",
+        "obtGenerateFileJS": "Generar archivo idioma JavaScript",
+        "obtGenerateFileLangDic": "Generar archivo idioma diccionario",
+        "obtGenerateFileLangMenu": "Generar archivo idioma menu",
+        "obtGenerateFileMenu": "Generar archivo menu",
+        "obtGenerateFileMime": "Generar archivo mime",
+        "obtGenerateFileResources": "Generar archivo idioma Recursos",
+        "TitleBtnShowAllRecords": "Ver todos los registros",
+        "uoDescAdjustProfile": "En caso de ser necesario ajuste su perfil.",
+        "uoDescCalendar": "Establezca fechas de sus actividades",
+        "uoDescChangePass": "Cambie su contraseña periodicamente.",
+        "uoDescCustomize": "Personalice su aplicacion, elija un tema.",
+        "uoDescLang": "Cambiar al idioma de preferencia.",
+        "uoDescRestoresPw": "Cambie la contraseña de cualquier usuario que lo requiera",
+        "uoDescSecQuestion": "Establezca preguntas de seguridad para recuperacion de contraseña.",
+        "uoDescViewProfile": "Verifique que sus datos sean correctos.",
+        "uoDescWikiUser": "Cualquier inquietud sera resuelta en este apartado.",
+        "uoTextAdjustProfile": "Ajustar mi perfil",
+        "uoTextCalendar": "Calendario",
+        "uoTextChangePass": "Cambiar contraseña",
+        "uoTextCustomize": "Personalizar",
+        "uoTextLang": "Elegir Idioma",
+        "uoTextRestoresPw": "Cambiar password usuarios",
+        "uoTextSecQuestion": "Pregunta de seguridad",
+        "uoTextViewProfile": "Mi Perfil",
+        "uoTextWikiDev": "Manual de desarrollador",
+        "uoTextWikiUser": "Manual de usuario"
+    },
+    "Login": {
+        "AttemptsBlocking": "Este usuario ha sido bloqueado porque ha superado el maximo de intentos para acceder al sistema. Por favor contacte al administrador del sistema.",
+        "BtnLoginCancel": "¡He olvidado mi contraseña!",
+        "BtnLoginSubmit": "Acceder",
+        "BtnResetPwdCancel": "Atras",
+        "BtnResetPwdSubmit": "Enviar",
+        "BtnVerify": "Verificar mis datos",
+        "ChangePass": "Se ha remitido a su correo electronico un enlace para que pueda cambiar su contraseña de acceso al sistema",
+        "ChangePassConfirmPwd": "Confirme su contraseña",
+        "ChangePassConfirmPwdPH": "Confirme contraseña",
+        "ChangePassCurrentPwd": "contraseña actual",
+        "ChangePassCurrentPwdPH": "Ingrese contraseña actual",
+        "ChangePassNewPwd": "Nueva contraseña",
+        "ChangePassNewPwdPH": "Ingrese nueva contraseña",
+        "ChangePassRequired": "Cambie su contraseña",
+        "ChangePwdRequired": "Para acceder al sistema, debe realizar el cambio obligatorio de su contraseña",
+        "CaptchaVerify": "Por favor marque el re-captcha",
+        "CaptchaErrorMessage": "Error en la validación del re-captcha",
+        "DescFieldPass": "contraseña",
+        "DescFieldUser": "Nombre de usuario",
+        "DescFormLogin": "Ingrese sus credenciales para acceder al sistema",
+        "DescFormResetPwd": "Validacion de datos del usuario",
+        "DescFormSecQuestion": "Conteste la(s) pregunta(s) de seguridad para recuperar su contraseña",
+        "EmailField": "Correo electronico",
+        "EmailPlaceholder": "Ingrese su correo electronico",
+        "fCPMessage": "Al ingresar por primera vez al sistema, el cambio de contraseña es obligatorio. Por favor establezca una contraseña segura.",
+        "fCPTitle": "Cambio de contraseña",
+        "ForceChangePass": "Senor usuario, se ha completado 30 dias despues del ultimo cambio de su contraseña, por favor cambiela ahora mismo.",
+        "IdeNumField": "Numero de identificacion",
+        "IdeNumPlaceholder": "Ingrese su numero de identificacion",
+        "IdeTypField": "Tipo de identificacion",
+        "IdeTypPlaceholder": "Seleccione su tipo de identificacion",
+        "InactivityBlocking": "El usuario ha sido bloqueado por inactividad. Por favor contacte al administrador del sistema.",
+        "MsgBackToLogin": "En unos instantes sera direccionado(a a la pagina de inicio de sesion",
+        "PlaceholderPass": "Ingrese su contraseña",
+        "PlaceholderUser": "Ingrese su nombre de usuario",
+        "RespField": "Respuesta pregunta de seguridad",
+        "RespPlaceholder": "Responda la pregunta de recuperacion de contraseña",
+        "SecQueField": "Pregunta de seguridad",
+        "SecQuePlaceholder": "Indique la pregunta de recuperacion de contraseña",
+        "Subtitle": "Verifique quienes ingresan a la aplicacion",
+        "TimeOutLogin": "Opsss!!!, Debemos asegurarnos que no se trata de un robot.",
+        "Title": "Control de ingresos al sistema",
+        "TitleFormLogin": "Acceso",
+        "TitleFormResetPwd": "Recuperar mi contraseña",
+        "UserDeleted": "Este usuario ha sido eliminado por el administrador del sisitema. Para acceder nuevamente contacte al Administrador del Sistema.",
+        "WrongDataPassRec": "Datos de recuperación de contraseña incorrectos.",
+        "WrongSecQuest": "La pregunta o respuesta de recuperacion de contraseña es (son incorrecta (s.",
+        "WrongUser": "Usuario o password incorrectos"
+    },
+    "LogScreen": {
+        "SubtitleClient": "Por favor intentelo nuevamente, si el error persiste contacte al administrador del sistema, informando el (Id del error o adjuntando una captura de pantalla.",
+        "TextBrowser": "Navegador",
+        "TextDatetime": "Fecha y hora",
+        "TextIdError": "Id del error",
+        "TextUser": "Usuario",
+        "TitleClient": "Oops!. Ocurrio un error con la base de datos"
+    },
+    "Mail": {
+        "Subtitle": "Verifique si los correos electronicos fueron enviados satisfactoriamente",
+        "Title": "Log de envio de correo"
+    },
+    "Menu": {
+        "MsgHelpGrid": "Senor usuario, si agrega una nueva opcion de menu, por favor ejecute los siguientes pasos:<br>1. Agregue la nueva opcion de menu.<br>2. Ejecute la perfilacion.<br>3. Genere las opciones de menu desde esta vista.",
+        "Subtitle": "Establezca las opciones de menu",
+        "Title": "Menu de opciones"
+    },
+    "MenuGroup": {
+        "Subtitle": "Establezca los grupos de menus para la aplicacion",
+        "Title": "Grupos de menu"
+    },
+    "Mime": {
+        "Subtitle": "Establezca los formatos aceptados para la carga de archivos",
+        "Title": "Tipos de formatos (mime"
+    },
+    "ModalColumns": {
+        "Title": "Ver u ocultar columnas"
+    },
+    "ModalDwn": {
+        "AddDeleteColumns": "Agregue o quite las columnas que desea exportar",
+        "All": "Todo",
+        "ChooseFormat": "Elija el formato",
+        "ExportCountRecords": "Seleccione la cantidad de registros a exportar",
+        "ThisView": "Esta vista",
+        "Title": "Descargar este contenido",
+        "ToCSV": "Descargar a CSV",
+        "ToExcel": "Descargar a Excel",
+        "ToPDF": "Descargar a PDF",
+        "ToTXT": "Descargar a TXT",
+        "ToXML": "Descargar a XML"
+    },
+    "ModalMassive": {
+        "DwnExampleFile": "Descargar archivo de ejemplo",
+        "OpenModal": "Carga masiva",
+        "Title": "Importar contenido"
+    },
+    "ModalSearch": {
+        "BtnSubmit": "Buscar ",
+        "OpenModal": "Buscador de la pagina",
+        "Title": "Buscar"
+    },
+    "MsgLogin": {
+        "Subtitle": "Descripcion de los mensajes de logs de ingresos al sistema",
+        "Title": "Mensajes para el log de ingresos al sistema"
+    },
+    "Profiles": {
+        "ebnEditProfile": "Editar perfil",
+        "Subtitle": "Establezca los privilegios sobre cada recurso",
+        "Title": "Control de perfilacion"
+    },
+    "Profiling": {
+        "ProfilingAccessForbidden": "Para acceder a este recurso, es necesario que haga clic en la opcion Poblar.",
+        "TitleFormEditProfileMenu": "Habilite o deshabilite las opciones del menu"
+    },
+    "ProfilingUser": {
+        "ebmGenerateFile": "¿Esta seguro de generar el archivo de perfilacion para el usuario seleccionado?",
+        "ebnGenerateFile": "Generar Perfil",
+        "ebnInherit": "Heredar perfilacion",
+        "ebnOptionsMenu": "Opciones",
+        "ebnPopulate": "Poblar",
+        "ebnResources": "Recursos",
+        "ebtGenerateFile": "Generar archivo Perfil",
+        "ebtInherit": "Heredar perfilacion de otro perfil",
+        "ebtOptionsMenu": "Establezca los permisos del menu",
+        "ebtPopulate": "Genere la informacion de menu y perfiles",
+        "ebtResources": "Establezca los permisos para cada recurso",
+        "MsgHelpForm": "Marque los elementos de la lista que quiere que se vean en el menu, desmarque los que no quiere que esten en el menu.",
+        "MsgHelpGrid": "Elija el tipo de usuario al que le quiere otorgar permisos y luego seleccione las acciones en el siguiente orden:<br> 1. Poblar: Siempre y cuando se hayan hecho ampliaciones de la aplicacion, es util para diligenciar las tablas que controlan la perfilacion.<br> 2. Opciones: Para habilitar los accesos en el menu y en la opcion Recursos.<br> 3. Recursos: para establecer los permisos CRUD. {Crear, Leer, Actualizar, Borrar}.<br> 4. Generar perfil: Cree el archivo de perfilacion del usuario creado.",
+        "obnExport": "Exportar perfilacion",
+        "obtExport": "Exportar toda la perfilacion a un archivo SQL",
+        "Subtitle": "Establezca los permisos de los usuarios del sistema",
+        "Title": "Generar perfilacion"
+    },
+    "QueryType": {
+        "Subtitle": "Tipos de consultas que se ejecutan en la base de datos",
+        "Title": "Tipos de consulta SQL"
+    },
+    "Reports": {
+        "Subtitle": "Verifique quien descarga los reportes",
+        "Title": "Descarga de reportes"
+    },
+    "Repository": {
+        "BtnNewDirName": "Crear Directorio",
+        "BtnNewDirTitle": "Agregar nuevo directorio",
+        "BtnViewGridName": "Vista Cuadricula",
+        "BtnViewGridTitle": "Ver vista cuadricula",
+        "EditdeleteDirName": "Eliminar Directorio",
+        "EditDeleteDirTitle": "Eliminar Directorio",
+        "EditDelFileName": "Eliminar archivo",
+        "EditDelFileTitle": "Eliminar archivo",
+        "EditDwnFileName": "Descargar",
+        "EditDwnFileTitle": "Descargar archivo",
+        "EditMoveDirMsg": "Seleccione una carpeta al cual desea mover este directorio",
+        "EditMoveDirName": "Mover directorio",
+        "EditMoveDirTitle": "Mover este directorio",
+        "EditMoveFileMsg": "Seleccione un directorio al cual desea mover el archivo",
+        "EditMoveFileName": "Mover archivo",
+        "EditMoveFileTitle": "Mover este archivo",
+        "EditOpenDirName": "Abrir Directorio",
+        "EditOpenDirTitle": "Abrir Directorio",
+        "EditRenameDirMsg": "Indique el nombre con el que desea renombrar este directorio",
+        "EditRenameDirName": "Renombrar directorio",
+        "EditRenameDirTitle": "Renombrar este archivo",
+        "EditRenameFileMsg": "Indique el nombre con el que desea renombrar este archivo",
+        "EditRenameFileName": "Renombrar archivo",
+        "EditRenameFileTitle": "Renombrar este archivo",
+        "EditVersionsName": "Versiones",
+        "EditVersionsTitle": "Ver las versiones de este archivo",
+        "EditViewFileName": "Visualizar",
+        "EditViewFileTitle": "Visualizar anexo",
+        "OptAjaxFiles": "Carga anexos",
+        "Share": "Compartir",
+        "ShareDir": "Compartir este directorio",
+        "ShareDirMsg": "Elija el usuario con el que desea compartir este directorio",
+        "ShareFile": "Compartir este archivo",
+        "ShareFileMsg": "Elija el usuario con el que desea compartir este archivo",
+        "Subtitle": "Gestione sus carpetas y documentos",
+        "Title": "Repositorio de documentos"
+    },
+    "SecurityQuestion": {
+        "Subtitle": "Establezca las preguntas de seguridad para la recuperacion de contraseñas",
+        "Title": "Preguntas de seguridad para recuperacion de contraseñas"
+    },
+    "Settings": {
+        "Subtitle": "Parametrice su aplicacion",
+        "Title": "Herramientas de configuracion"
+    },
+    "SqlLog": {
+        "Subtitle": "Listado de consultas realizadas sobre la base de datos",
+        "Title": "Log de transacciones SQL"
+    },
+    "States": {
+        "Subtitle": "Agrege los departamentos de su pais",
+        "Title": "Departamentos / Estados"
+    },
+    "Style": {
+        "Subtitle": "Gestione los estilos de la aplicacion",
+        "Title": "Estilos de la aplicacion"
+    },
+    "Success": {
+        "DeleteMenuProfiles": "Se han borrado: la opcion de Menu seleccionada y los perfiles asociados, exitosamente.",
+        "FileCreated": "El archivo se ha creado exitosamente",
+        "PasswordChanged": "La contraseña se ha cambiado con exito.",
+        "ProfileCreated": "El perfil se ha creado con exito."
+    },
+    "TypeText": {
+        "Subtitle": "Define la forma como se presenta la informacion en las tablas",
+        "Title": "Tipos de texto"
+    },
+    "UserData": {
+        "Subtitle": "Diligencie la informacion de los usuarios",
+        "Title": "Datos de los usuarios"
+    },
+    "UserGroups": {
+        "Subtitle": "Cree grupos de usuarios",
+        "Title": "Grupos de usuarios"
+    },
+    "UserOption": {
+        "AppStyleSubtitle": "Personalice la aplicacion a su gusto",
+        "AppStyleTitle": "Estilos de la aplicacion",
+        "BtnAppStyleName": "Aplicar este tema",
+        "BtnChangeLangName": "Cambiar idioma",
+        "ChangePassSubtitle": "Cambie su contraseña periodicamente.",
+        "ChangePassTitle": "Cambio de contraseña usuario: ",
+        "LangMsgHelp": "Seleccione el idioma y luego haga clic en el boton {Cambiar idioma}",
+        "LangSubtitle": "Elija el idioma de su preferencia",
+        "LangTitle": "Elegir idioma",
+        "Option10Des": "Restablecer",
+        "Option10Text": "Restablezca la contraseña de otros usuarios.",
+        "Option1Desc": "Ver mi perfil",
+        "Option1Text": "Verifique si sus datos personales son correctos, en caso contrario vaya a la opcion {Ajustar Perfil}",
+        "Option2Desc": "Ajustar Perfil",
+        "Option2Text": "Ajuste sus datos personasles en caso de ser necesario.",
+        "Option3Des": "Pregunta seguridad",
+        "Option3Text": "Responda la pregunta de seguridad para la recuperacion de contraseña.",
+        "Option4Des": "Cambiar contraseña",
+        "Option4Text": "Cambie su contraseña periodicamente.",
+        "Option5Des": "Personalizacion",
+        "Option5Text": "Personalice su aplicacion.",
+        "Option6Des": "Wiki Usuario",
+        "Option6Text": "Mi Wiki. Informacion para usuarios.",
+        "Option7Des": "Wiki Desarrollador",
+        "Option7Text": "Mi Wiki. Informacion para desarrolladores.",
+        "Option8Des": "Calendario",
+        "Option8Text": "Verifique sus actividades",
+        "Option9Des": "Elegir Idioma",
+        "Option9Text": "Cambie el idioma de la aplicacion al de su lengua nativa o preferencia.",
+        "RecPassSubtitle": "Preguntas de seguridad para recuperacion contraseñas",
+        "RecPassTitle": "Recuperacion de contraseñas",
+        "SetPassMsgHelp": "Seleccione el usuario y luego haga clic en el boton {Cambiar Password}",
+        "SetPassSubtitle": "Cambie el password del usuario que requiera",
+        "SetPassTitle": "Restablecer password usuarios",
+        "Subtitle": "Gestione su usuario",
+        "UpdateDataSubtitle": "Aqui podra gestionar su informacion personal",
+        "UpdateDataTitle": "Formulario de actualizacion de datos del usuario"
+    },
+    "UserOptionIndex": {
+        "Subtitle": "Opciones de usuario",
+        "UserOptionIndex": "Opciones de usuario"
+    },
+    "Users": {
+        "ebnDeleteUser": "Eliminar usuario",
+        "ebnEditUser": "Editar usuario",
+        "ebnInfoUser": "Informacion usuario",
+        "ebtDeleteUser": "Eliminar este usuario",
+        "ebtEditUser": "Editar este Usuario",
+        "ebtInfoUser": "Ver este usuario",
+        "obnAddUser": "Agregar Usuario",
+        "obtAddUser": "Nuevo",
+        "Subtitle": "Agrege, elimine, active o inactive los usuarios del sistema",
+        "Title": "Administración de usuarios"
+    },
+    "UserStatus": {
+        "Subtitle": "Determine los estados que tendran los usuarios",
+        "Title": "Estados de los usuarios"
+    },
+    "UserTypes": {
+        "Subtitle": "Establezca tipos de usuarios",
+        "Title": "Tipos de usuarios"
+    },
+    "VersionsFile": {
+        "Subtitle": "Vea las versiones historicas que ha tenido el archivo seleccionado",
+        "Title": "Versiones del archivo"
+    },
+    "Warning": {
+        "ConfirmAdd": "¿Confirma que desea agregar este registro?",
+        "ConfirmDelete": "¿Confirma que desea eliminrar este registro?",
+        "ConfirmUpdate": "¿Confirma que desea actualizar este registro?",
+        "DeleteDirectory": "¿Esta seguro de eliminar este directorio y todo su contenido?",
+        "DeleteFile": "¿Esta seguro de eliminar este archivo?"
+    },
+    "Wiki": {
+        "EmptyRecords": "Opsss!!!, no pudimos devolver ningun registro.",
+        "Subtitle": "Configure su wikipedia",
+        "Title": "Mi wiki"
+    },
+    "WikiDev": {
+        "Title": "Documentacion para desarrolladores"
+    },
+    "WikiUser": {
+        "Title": "Documentacion para usuarios"
+    },
+    "Exception": {
+        "failedMethod": "",
+        "WrongUrl": "Url de conexion con API incorrecta",
+        "WrongTimeout": "Tiempo de espera no establecido"
+    },
+    "UserOption": {
+        "UseTypDescription": "Perfil",
+        "UseFirtsName": "Nombre completo",
+        "UseSurname": "Nombre completo",
+        "UseAppStyle": "Estilo aplicación",
+        "UseLang": "Idioma",
+        "UseDatCellphone": "Celular",
+        "UseDatAddress": "Dirección",
+        "Localization": "Localización",
+        "CreationDate": "Fecha creación",
+        "UseLastAccess": "Ultimo acceso",
+        "UseLastIp": "Ultima IP",
+        "UseEmail": "Email",
+        "page": ""
+    }
+}

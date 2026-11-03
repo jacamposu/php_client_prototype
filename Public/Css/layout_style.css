@@ -1,0 +1,136 @@
+:root{
+    --bg-body:#f4f6f9;
+    --bg-header:#ffffff;
+    --bg-aside:#ffffff;
+    --bg-main:#ffffff;
+    --text:#212529;
+    --hover:rgba(0,0,0,.05);
+    --header-heigth: 48px;
+}
+body.dark{
+    --bg-body:#1e1e1e;
+    --bg-header:#252526;
+    --bg-aside:#252526;
+    --bg-main:#1e1e1e;
+    --text:#e0e0e0;
+    --hover:#333;
+}
+
+*{box-sizing:border-box;}
+body{
+    margin:0;
+    height:100vh;
+    background:var(--bg-body);
+    color:var(--text);
+    font-family:Arial,sans-serif;
+}
+
+/* HEADER */
+header{
+    height:var(--header-heigth);
+    background:var(--bg-header);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    border-bottom:1px solid #ccc;
+}
+
+/* LAYOUT */
+.wrapper{
+    display:flex;
+    height:calc(100vh - var(--header-heigth));
+    position:relative;
+}
+
+/* ASIDE */
+.aside{
+    width:260px;
+    background:var(--bg-aside);
+    padding:15px;
+    overflow-y:auto;
+    border-right:1px solid #ccc;
+    transition:width .3s ease, transform .3s ease;
+    position:relative;
+    z-index:100;
+}
+
+/* Colapsado desktop */
+.aside.collapsed{
+    width:70px;
+}
+.aside.collapsed:hover{
+    width:260px;
+    position:absolute;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+/* Contenido */
+.aside h4{margin-bottom:15px;text-align:center;}
+.aside.collapsed h4{display:none;}
+.aside.collapsed:hover h4{display:block;}
+
+/* MENU */
+.menu{list-style:none;padding:0;}
+.menu li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    color:var(--text);
+    text-decoration:none;
+    cursor:pointer;
+    border-radius:5px;
+    transition:background .2s,padding-left .2s;
+}
+.menu li a:hover{
+    background:var(--hover);
+}
+.menu a span{flex:1;}
+
+/* SUBMENU */
+.submenu{
+    list-style:none;
+    padding-left:30px;
+    display:none;
+}
+.menu li.open .submenu{display:block;}
+.chevron{transition:transform .3s;}
+.menu li.open .chevron{transform:rotate(180deg);}
+
+/* OCULTAR TEXTO EN COLAPSADO */
+.aside.collapsed .menu a span,
+.aside.collapsed .submenu{display:none;}
+.aside.collapsed:hover .menu a span,
+.aside.collapsed:hover .submenu{display:block;}
+.aside.collapsed .menu a{justify-content:center;}
+.aside.collapsed:hover .menu a{justify-content:flex-start;}
+
+/* MAIN */
+main{
+    flex:1;
+    background:var(--bg-main);
+    padding:20px;
+    overflow-y:auto;
+}
+
+/* ===== RESPONSIVE (FIX CLAVE) ===== */
+@media (max-width: 768px){
+    .aside{
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        transform:translateX(-100%);
+        box-shadow:0 0 20px rgba(0,0,0,.4);
+    }
+    .aside.open{
+        transform:translateX(0);
+    }
+    /* Desactivar hover flotante en móvil */
+    .aside.collapsed:hover{
+        width:70px;
+        position:relative;
+        box-shadow:none;
+    }
+}

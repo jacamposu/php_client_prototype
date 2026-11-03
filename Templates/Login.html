@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="Prototipo.com" />
+	<meta name="Author" content="Jose Antonio Campos Urquijo" />
+	<meta name="description" content="Aplicacion prototipo" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="robots" content="all,follow" />
+	<meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app" />
+	<title><?= $itemsPage['controller'] ?></title>
+	<link rel="icon" type="image/x-icon" href="<?= $itemsPage['urlResources'] ?>/Img/Icons/Icon.png" />	
+	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Plugins/bootstrap/dist/flatly/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Plugins/fontawesome/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Css/Login.css" />
+</head>
+<body>
+	<span id="loadForm"></span>
+	<input type="hidden" id="url" value="<?= $itemsPage['url'] ?>" />
+	<!-- spinner -->
+	<dialog id="dialog_loading" class="dialog-loading">
+		<div class="spinner">
+			<img src="<?= $itemsPage['urlResources'] ?>/Img/Icons/icon.png" alt="Icon"> Loading
+			<div class="spinner-sector spinner-sector-red"></div>
+			<div class="spinner-sector spinner-sector-blue"></div>
+			<div class="spinner-sector spinner-sector-yellow"></div>
+		</div>
+	</dialog>
+	<!-- errors -->
+	<dialog id="dialog_error" class="dialog-error text-center">
+		<div>
+			<em class="fas fa-exclamation-circle fa-4x text-danger"></em>
+			<h2 id="title-error" class="text-muted"></h2>
+			<p id="error" class="text-muted"></p>
+			<form method="dialog"><button class="btn btn-primary">Close</button></form>
+		</div>
+	</dialog>
+
+	<div class="row gradient-login">
+		<div class="offset-4 col-4 container-login">
+			<div class="card">
+				
+				<div class="px-5 pt-5">
+					<!-- appname - logo -->
+					<div>
+						<img src="<?= $itemsPage['urlResources'] ?>/Img/Icons/Icon.png"/>&nbsp;
+						<strong class="font-weigth-bold " id="app_name" style="font-size: 1.3rem;"></strong>
+					</div>
+				</div>
+				<div class="p-5">
+					<!-- title -->
+					<div class="py-1">
+						<span class="h5 font-weigth-bold">
+							<strong id="page_name" class="text-muted"></strong>
+							<p><small class="text-muted" id="page_message"></small></p>
+						</span>
+					</div>
+					<!-- form -->
+					<div id="container-inputs" class="row"></div>
+					<div id="recaptcha"></div>
+					<div class="d-grid gap-2" id="container-buttons"></div>
+				
+					<div class="p-0 text-center" id="container-cancel"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-4"></div>
+	</div>
+	<script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/popper/popper.min.js"></script>
+	<script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/sweetalert/SA2.js"></script>
+	<script type="module" src="<?= $itemsPage['urlResources'] ?>/Js/LoaderLogin.js"></script>
+</body>
+</html>

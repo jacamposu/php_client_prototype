@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.useroptions{
+    width: 50px;
+    background-color:azure;
+    min-height: 100vh;
+}
+
+.btn{
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color:darkcyan;
+    color: white;
+    border-color: white;
+}
+.btn-primary:hover{
+    background-color: cyan;
+    color: black;
+}
+
+.btn-outline-primary{
+    background-color: white;
+    border-color: blue;
+}
+
+
+.btn-info{
+    background-color: aqua;
+}
+
+.table{
+    background-color: gainsboro;
+}
+
+.main{
+    width: 900px;
+    background-color: blanchedalmond;
+}
+
+.offcanvas{
+    left:0;
+}

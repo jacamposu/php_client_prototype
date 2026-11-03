@@ -1,0 +1,16 @@
+{
+    "AppName": "PROTOTIPO PRUEBA",
+    "AppLang": "Es",
+    "Recaptcha": {
+        "Enabled": false,
+        "PublicKey": "6LdKcxEbAAAAAC2YNsp_RxOCelvRvqfyYJe0qGSR",
+        "SecretKey": "6LdKcxEbAAAAADBmZovd299PpcUPFcrdIEqzBvf0",
+        "Text": "Demuestra que no eres un robot"
+    },
+    "rowsByPage": 50,
+    "Api": {
+        "Auth": "cHJ1ZWJhOjEyMzQ=",
+        "Authorization": "Authorization: Basic ",
+        "TimeOut": 60
+    }
+}
