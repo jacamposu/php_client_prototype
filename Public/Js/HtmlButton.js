@@ -1,30 +1,14 @@
 import { HtmlUtil } from '../../Public/Js/HtmlUtil.js';
 import { Events } from '../../Public/Js/Events.js';
 import { ActionsPage } from '../../Public/Js/ActionsPage.js';
+import { Files } from '../../Public/Js/Files.js';
 
 
 export class HtmlButton extends HtmlUtil {
 
-    CreateButtons(buttons,container){
-        buttons.forEach(button => {
-            switch(button.mode){
-                case 'SubmitLogin':
-                    this.CreateSubmitLogin(button,container);
-                    break;
-
-                case 'CancelLogin':
-                    this.CreateCancelogin(button,container);
-                    break;
-
-                case 'Reset':
-                    this.CreateResetLogin(button,container);
-                    break;
-                
-                case 'Submit':
-                    this.CreateSubmitForm(button,container);
-                    break;
-            }
-        });
+    constructor() {
+        super();
+        this.url = Files.ConvertJsonToObject('http://localhost/DEV/php_client_prototype/Config/Routes.json');
     }
 
     CreateSubmitForm(button,container) {
@@ -92,7 +76,7 @@ export class HtmlButton extends HtmlUtil {
     
     CreateCancelogin(button,container){
         const link = document.createElement("a");
-        link.href = button.url;
+        link.href = this.url.project + button.url;
         link.className = button.classname;
 
         const icon = document.createElement('em');

@@ -14,59 +14,66 @@
 	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Plugins/bootstrap/dist/flatly/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Plugins/fontawesome/css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Css/Login.css" />
+	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Css/Spinner.css" />
 </head>
 <body>
 	<span id="loadForm"></span>
-	<input type="hidden" id="url" value="<?= $itemsPage['url'] ?>" />
+
 	<!-- spinner -->
-	<dialog id="dialog_loading" class="dialog-loading">
-		<div class="spinner">
-			<img src="<?= $itemsPage['urlResources'] ?>/Img/Icons/icon.png" alt="Icon"> Loading
-			<div class="spinner-sector spinner-sector-red"></div>
-			<div class="spinner-sector spinner-sector-blue"></div>
-			<div class="spinner-sector spinner-sector-yellow"></div>
-		</div>
-	</dialog>
+	<?php require_once "Spinner.html" ?>
+
 	<!-- errors -->
-	<dialog id="dialog_error" class="dialog-error text-center">
+	<!-- <dialog id="dialog_error" class="dialog-error text-center">
 		<div>
 			<em class="fas fa-exclamation-circle fa-4x text-danger"></em>
 			<h2 id="title-error" class="text-muted"></h2>
 			<p id="error" class="text-muted"></p>
 			<form method="dialog"><button class="btn btn-primary">Close</button></form>
 		</div>
-	</dialog>
+	</dialog> -->
 
-	<div class="row gradient-login">
-		<div class="offset-4 col-4 container-login">
-			<div class="card">
-				
-				<div class="px-5 pt-5">
-					<!-- appname - logo -->
-					<div>
-						<img src="<?= $itemsPage['urlResources'] ?>/Img/Icons/Icon.png"/>&nbsp;
-						<strong class="font-weigth-bold " id="app_name" style="font-size: 1.3rem;"></strong>
-					</div>
-				</div>
-				<div class="p-5">
-					<!-- title -->
-					<div class="py-1">
-						<span class="h5 font-weigth-bold">
-							<strong id="page_name" class="text-muted"></strong>
-							<p><small class="text-muted" id="page_message"></small></p>
-						</span>
-					</div>
-					<!-- form -->
+	<div class="row vh-100 bg-login">
+		<div class="offset-xs-0 col-xs-12 offset-sm-1 col-sm-10 offset-md-2 col-md-8 offset-lg-3 col-lg-6 offset-xl-4 col-xl-4">
+	
+			<div class="text-center" style="height: 35vh; max-height: 35vh; padding-top: 70px;">
+				<img src="<?= $itemsPage['urlResources'] ?>/Img/Logos/Logo.png" width="80px" alt="app-logo"/>
+				<p class="mt-2"><strong class="h4 text-white font-weigth-bold" id="app_name"></strong></p>
+				<p><strong class="h2 text-white" id="page_name"></strong></p>
+			</div>
+			<div class="card px-5 py-3" style="min-height: 30vh; max-height: 50vh;">
+				<p class="text-muted" id="page_message"></p>
+				<form class="row needs-validation" novalidate>
+					<input type="hidden" id="url" value="<?= $itemsPage['url'] ?>" />
 					<div id="container-inputs" class="row"></div>
 					<div id="recaptcha"></div>
-					<div class="d-grid gap-2" id="container-buttons"></div>
-				
-					<div class="p-0 text-center" id="container-cancel"></div>
-				</div>
+					<span class="text-end" id="container-submit"></span>
+					<span class="text-end" id="container-reset"></span>
+				</form>
+			</div>
+			<div class="py-5" style="height: 15vh;">
+				<div class="p-0 text-center" id="container-redirect"></div>
 			</div>
 		</div>
-		<div class="col-4"></div>
 	</div>
+
+	<script>
+(() => {
+  'use strict'
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+	</script>	
 	<script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/popper/popper.min.js"></script>
 	<script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -93,10 +93,6 @@ export class Menu {
 
             // document.getElementById(content_id).appendChild(div_item);
 
-
-            this.BuildFile()
-
-
             // li.onclick = function (e){
             //     li.classList.toggle('open');
             // }

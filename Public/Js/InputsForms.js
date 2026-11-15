@@ -14,7 +14,7 @@ export class InputsForms extends HtmlForms {
 		this.field = field;
 		this.container = container;
 		
-		let dictionary = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/Dictionaryori.json');
+		let dictionary = Files.ConvertJsonToObject('http://localhost/DEV/php_client_prototype/Config/LoginDictionary.json');
 		this.dictionary = dictionary[field.fieldName];
 		this.htmlform = new HtmlForms(this.dictionary);
 

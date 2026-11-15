@@ -9,7 +9,6 @@ export class Table {
     }
 
     createTable(data,container,table_id){
-        console.log(data)
         document.getElementById(container).innerHTML = "";
         this.tableStructure(table_id,container);
         this.Caption(data,table_id);

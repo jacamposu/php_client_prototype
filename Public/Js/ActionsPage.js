@@ -10,7 +10,7 @@ export class ActionsPage {
 
     constructor() {
         this.token = JSON.parse(localStorage.getItem("PrototypeSessionToken"))
-        this.url = Files.ConvertJsonToObject('../../Config/Routes.json')
+        this.url = Files.ConvertJsonToObject('http://localhost/DEV/php_client_prototype/Config/Routes.json')
     }
 
     FormAdd = async (url) => {
@@ -212,6 +212,7 @@ export class ActionsPage {
     }
 
     CreateTable = async(url, orderBy='', numPage='') => {
+        dialog_loading.showModal();
         var table = new Table();
         $("#content-preload").removeClass("d-none");
         url = (orderBy != '') ? url+'orderby='+orderBy+'/' : url
@@ -225,8 +226,7 @@ export class ActionsPage {
                 'token': this.token
             }
         }
-console.log(settings)
-return
+        
         await fetch(url, settings).then(response => response.json()).then(data => {
             
             if (data.statusCode == 401){
@@ -274,12 +274,14 @@ return
             // });
 
             if(data.statusCode == 200){
+                
                 table.createTable(data.response.table, "container_table", 'mitabla');
                 // $("#pagination-table").html(table.pagination(data.response.pagination));
                 $("#content-preload").attr("class", "d-none");
             }else{
                 $("#container_table").html(table.Error(data))
             }
+            dialog_loading.close()
         }).catch(err => {
             console.error("FETCH_ERROR: ", err)
         });

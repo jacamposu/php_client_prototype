@@ -1,5 +1,6 @@
 import { InputsForms } from '../../Public/Js/InputsForms.js';
 import { HtmlForms } from '../../Public/Js/HtmlForms.js';
+import { Files } from '../../Public/Js/Files.js';
 
 export class Form {
 
@@ -74,7 +75,8 @@ export class Form {
             'TextLogin': () => input.text()
         };
 
-        const inputType = field?.metadata?.inputTypeForm;
+        let dictionary = Files.ConvertJsonToObject('http://localhost/DEV/php_client_prototype/Config/LoginDictionary.json');        
+        const inputType = dictionary[field.fieldName].inputTypeForm;
         const renderInput = inputTypeMap[inputType] || (() => input.text());
         renderInput();
     }

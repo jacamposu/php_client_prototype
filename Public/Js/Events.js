@@ -25,15 +25,19 @@ export class Events{
         const post = {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json;charset=utf-8'                
+                'Content-Type': 'application/json;charset=utf-8'
             },
             body: JSON.stringify(Object.assign({}, array)) 
         }
 
         const recuperarPassword = localStorage.getItem("RecuperarPassword") || '';
-        if (!recuperarPassword == 'undefined') post.headers.idUser = recuperarPassword
+        
+        if (!recuperarPassword == 'undefined') 
+            post.headers.idUser = recuperarPassword
 
-        fetch(/*$("#urlActionForm").val()*/ "http://localhost/api.login/Login/Validate/", post).then(response => response.json()).then(data => {
+        const urlSend = url.url.apiLogin + $("#urlActionForm").val();
+        // console.log(urlSend); return;
+        fetch(urlSend, post).then(response => response.json()).then(data => {
             dialog_loading.close()
             if(data.statusCode == 200){
                 if(data.response.token){
@@ -44,7 +48,8 @@ export class Events{
                     window.location.href = urlHome+"/Home/Home/"
                 }else if(data.response.statusCode === 300){
                     localStorage.setItem('RecuperarPassword', JSON.stringify(data.response.user))
-                    sa.Redirect(data.response.statusText, data.response.title, data.response.buttonName, data.response.text, $("#urlRedirect").val())
+                    const urlRedirect = url.url.project + $("#urlRedirect").val();
+                    sa.Redirect(data.response.statusText, data.response.title, data.response.buttonName, data.response.text, urlRedirect)
                 }else if(data.response){
                     sa.Alert(data.response.title, data.response.text, 'success')
                 }else{

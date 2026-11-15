@@ -1,7 +1,7 @@
 {
-    "apiCore":"http://localhost/api.core/",
-    "apiLogin":"http://localhost/api.login/",
-    "project":"http://Localhost/Prototipo/",
+    "apiCore":"http://localhost/DEV/php_api_core/",
+    "apiLogin":"http://localhost/DEV/php_api_login/",
+    "project":"http://localhost/DEV/php_client_prototype/",
     "Login":{
         "Login":{
             "url":"Login/Form/",

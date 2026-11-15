@@ -28,8 +28,33 @@ export class Login {
         document.getElementById("app_name").innerHTML = response.appName;
         document.getElementById("page_name").innerHTML = response.titleForm;
         document.getElementById("page_message").innerHTML = response.msgForm;
+
         form.CreateFields(response.fields, 'container-inputs');
-        btn.CreateButtons(response.buttons, "container-buttons");
+
+        const container = document.getElementById('container-inputs');
+        response.fields.hidden.forEach(input => {
+            const hidden = document.createElement("input");
+            hidden.type = "hidden";
+            hidden.id = input.id;
+            hidden.value = input.value;
+            container.appendChild(hidden);
+        });
+
+        response.buttons.forEach(button => {
+            switch(button.mode){
+                case 'SubmitLogin':
+                    btn.CreateSubmitLogin(button, "container-submit");
+                    break;
+
+                case 'RedirectLogin':
+                    btn.CreateCancelogin(button, "container-redirect");
+                    break;
+
+                case 'ResetLogin':
+                    btn.CreateResetLogin(button, "container-reset");
+                    break;
+            }
+        });
     }
 
     // Send(data) {

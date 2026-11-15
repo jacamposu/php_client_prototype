@@ -21,6 +21,7 @@ export class Load{
     }
 
     GetContext = async (urlContext) => {
+        console.log(urlContext)
         await fetch(urlContext, this.settings).then(response => response.json()).then(data => {
             if(data.statusCode == 200){
                 localStorage.setItem('PrototpeContext', JSON.stringify(data));

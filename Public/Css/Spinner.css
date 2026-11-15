@@ -1,0 +1,147 @@
+:root {
+    --cube-size: 100px;
+}
+
+
+/* loader */
+*,*:after,*::before{
+  box-sizing: border-box;
+}
+   
+.spinner{
+	/* display: flex; */
+	/* justify-content: center; */
+	align-items: center;
+	font-size: 1.5rem;
+	overflow: hidden;
+	position: relative;
+    z-index: 10;
+}
+
+
+
+
+
+.scene{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    min-width: 200px;
+    perspective:1000px;
+}
+
+.cube{
+    width:var(--cube-size);
+    height:var(--cube-size);
+    position:relative;
+    transform-style:preserve-3d;
+    margin:auto;
+    animation:rotateCube 8s infinite linear;
+}
+
+@keyframes rotateCube{
+    from{
+        transform:rotateX(-25deg) rotateY(0deg);
+    }
+    to{
+        transform:rotateX(-25deg) rotateY(360deg);
+    }
+}
+
+.face{
+    position:absolute;
+    width:var(--cube-size);
+    height:var(--cube-size);
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+
+    gap:2px;
+    padding:0px;
+
+    border:1px solid #fff;
+    background:#fff;
+}
+
+
+
+
+/* Cara frontal - rojo */
+.front{
+    transform:translateZ(calc(var(--cube-size)/2));
+}
+
+.front span{
+    /* background:#d90429; */
+    background:#0077ff;
+}
+
+/* Cara trasera - naranja */
+.back{
+    transform:rotateY(180deg) translateZ(calc(var(--cube-size)/2));
+}
+
+.back span{
+    /* background:#ff7b00; */
+    background:#18c964;
+}
+
+/* Cara derecha - azul */
+.right{
+    transform:rotateY(90deg) translateZ(calc(var(--cube-size)/2));
+}
+
+.right span{
+    /* background:#0077ff; */
+    background:#ffffff;
+}
+
+/* Cara izquierda - verde */
+.left{
+    transform:rotateY(-90deg) translateZ(calc(var(--cube-size)/2));
+}
+
+.left span{
+    /* background:#18c964; */
+    background:#ffd60a;
+}
+
+/* Cara superior - blanco */
+.top{
+    transform:rotateX(90deg) translateZ(calc(var(--cube-size)/2));
+}
+
+.top span{
+    /* background:#ffffff; */
+    background:#d90429;
+}
+
+/* Cara inferior - amarillo */
+.bottom{
+    transform:rotateX(-90deg) translateZ(calc(var(--cube-size)/2));
+}
+
+.bottom span{
+    /* background:#ffd60a; */
+    background:#ff7b00;
+}
+
+.face span{
+    border-radius:6px;
+    border:1px solid rgba(0,0,0,.35);
+    box-shadow:
+        inset 0 4px 8px rgba(255,255,255,.15),
+        inset 0 -3px 6px rgba(0,0,0,.3);
+}
+
+
+.dialog-loading{
+  border:none; 
+  background-color: rgba(0,0,0,0.8); 
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.text-spinner{
+    color: white;
+}
