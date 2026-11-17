@@ -71,9 +71,7 @@ body{
     height:calc(100vh - 50px);
 }
 .menu{
-    /* Scroll vertical */
     overflow-y: auto;
-    /* Scroll horizontal oculto */
     overflow-x: hidden;
 }
 

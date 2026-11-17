@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $itemsPage['controller'] ?></title>
     <link rel="icon" type="image/x-icon" href="../../Public/Img/Icons/Icon.png" />	
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../Public/Plugins/bootstrap/css/bootstrap.min.css" /> 
-    <!-- <link rel="stylesheet" type="text/css" href="../../Public/Plugins/fontawesome/css/all.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../../Public/Plugins/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="../../Public/styles.css">
     <link rel="stylesheet" type="text/css" href="../../Public/Css/Spinner.css" />
 </head>
 <body>
+    <!-- spinner -->
+	<?php require_once "Spinner.html" ?>
     <?php require_once "Header.html" ?>
     <div class="app-container">
-        <!-- spinner -->
-	    <?php require_once "Spinner.html" ?>
         <!-- Sidebar -->
-        <?php require_once "Sidebar.html" ?>
+        <aside id="sidebar" class="sidebar">
+            <?php require_once "Sidebar.html" ?>
+        </aside>
         <!-- Main Content -->
         <main class="content">
             <div class="content-header">
@@ -43,11 +43,16 @@
     
     <div id="rightPanel" class="right-panel">
         <div class="panel-header">
-            <h5>Panel Lateral</h5>
+            <h5>Notificaciones</h5>
             <button id="closePanel">×</button>
         </div>
         <div class="panel-content">
-            Contenido de ejemplo
+            <ol>
+                <li>lorem ipsum dolor sit amet</li>
+                <li>lorem ipsum dolor sit amet</li>
+                <li>lorem ipsum dolor sit amet</li>
+                <li>lorem ipsum dolor sit amet</li>
+            </ol>
         </div>
     </div>
     <div id="overlay" class="overlay"></div>
@@ -101,9 +106,6 @@
         </div>
     </div>
 
-    
-
-
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
@@ -121,27 +123,8 @@
 
     <script type="text/javascript" src="../../Public/Plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="../../Public/Plugins/popper/popper.min.js"></script>
-    <script type="text/javascript" src="../../Public/Plugins/sweetalert/SA2.js"></script>
     <script type="text/javascript" src="../../Public/Plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">            
-        function actionTableOption(element){
-            const obj = {
-                function: element.dataset.function,
-                keyfield: element.dataset.keyfield,
-                record: element.dataset.record,
-                action: element.dataset.action
-                };
-
-            console.log(obj)
-        }
-
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-        })
-    </script>
-	<script type="module" src="../../Public/Js/LoadPage.js"></script>
-    <!-- <script src="../../Public/Js/layout_js.js"></script> -->
-    <script src="../../Public/script.js"></script>
+    <script type="text/javascript" src="../../Public/Plugins/sweetalert/SA2.js"></script>
+    <script type="module" src="../../Public/Js/LoadPage.js"></script>
 </body>
 </html>

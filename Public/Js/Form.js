@@ -75,7 +75,7 @@ export class Form {
             'TextLogin': () => input.text()
         };
 
-        let dictionary = Files.ConvertJsonToObject('http://localhost/DEV/php_client_prototype/Config/LoginDictionary.json');        
+        let dictionary = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/LoginDictionary.json');        
         const inputType = dictionary[field.fieldName].inputTypeForm;
         const renderInput = inputTypeMap[inputType] || (() => input.text());
         renderInput();

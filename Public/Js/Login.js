@@ -28,6 +28,7 @@ export class Login {
         document.getElementById("app_name").innerHTML = response.appName;
         document.getElementById("page_name").innerHTML = response.titleForm;
         document.getElementById("page_message").innerHTML = response.msgForm;
+        document.getElementById("time").innerHTML = response.time;
 
         form.CreateFields(response.fields, 'container-inputs');
 

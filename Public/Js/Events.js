@@ -22,6 +22,8 @@ export class Events{
         // 	array['idUser'] = formulario.elements.idUser.value
         // }
 
+        array['time'] = document.getElementById("time").textContent;
+
         const post = {
             method: 'POST',
             headers: {

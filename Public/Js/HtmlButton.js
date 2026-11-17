@@ -8,7 +8,7 @@ export class HtmlButton extends HtmlUtil {
 
     constructor() {
         super();
-        this.url = Files.ConvertJsonToObject('http://localhost/DEV/php_client_prototype/Config/Routes.json');
+        this.url = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/Routes.json');
     }
 
     CreateSubmitForm(button,container) {

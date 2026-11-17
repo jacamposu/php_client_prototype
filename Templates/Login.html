@@ -11,68 +11,55 @@
 	<meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app" />
 	<title><?= $itemsPage['controller'] ?></title>
 	<link rel="icon" type="image/x-icon" href="<?= $itemsPage['urlResources'] ?>/Img/Icons/Icon.png" />	
-	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Plugins/bootstrap/dist/flatly/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Plugins/bootstrap/css/bootstrap.min.css" /> 	
 	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Plugins/fontawesome/css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Css/Login.css" />
 	<link rel="stylesheet" type="text/css" href="<?= $itemsPage['urlResources'] ?>/Css/Spinner.css" />
 </head>
 <body>
 	<span id="loadForm"></span>
-
 	<!-- spinner -->
 	<?php require_once "Spinner.html" ?>
-
-	<!-- errors -->
-	<!-- <dialog id="dialog_error" class="dialog-error text-center">
-		<div>
-			<em class="fas fa-exclamation-circle fa-4x text-danger"></em>
-			<h2 id="title-error" class="text-muted"></h2>
-			<p id="error" class="text-muted"></p>
-			<form method="dialog"><button class="btn btn-primary">Close</button></form>
-		</div>
-	</dialog> -->
-
-	<div class="row vh-100 bg-login">
-		<div class="offset-xs-0 col-xs-12 offset-sm-1 col-sm-10 offset-md-2 col-md-8 offset-lg-3 col-lg-6 offset-xl-4 col-xl-4">
-	
-			<div class="text-center" style="height: 35vh; max-height: 35vh; padding-top: 70px;">
-				<img src="<?= $itemsPage['urlResources'] ?>/Img/Logos/Logo.png" width="80px" alt="app-logo"/>
-				<p class="mt-2"><strong class="h4 text-white font-weigth-bold" id="app_name"></strong></p>
-				<p><strong class="h2 text-white" id="page_name"></strong></p>
+	<div class="row vh-100 ">
+		<div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 col-xs-12">
+			<div class="text-center" style="height: 30vh; max-height: 30vh; padding-top: 70px;">
+				<img src="<?= $itemsPage['urlResources'] ?>/Img/Icons/Icon.png" alt="app-logo"/>
+				<strong class="h3" id="app_name"></strong>
+				<p><small class="text-muted">Una solucion empresarial</small></p>
 			</div>
-			<div class="card px-5 py-3" style="min-height: 30vh; max-height: 50vh;">
+			<div class="px-5 py-3" style="min-height: 30vh; max-height: 50vh;">
+				<p class="h3 font-weight-bold" id="page_name"></p>
 				<p class="text-muted" id="page_message"></p>
 				<form class="row needs-validation" novalidate>
 					<input type="hidden" id="url" value="<?= $itemsPage['url'] ?>" />
+					<input type="hidden" id="time" />
 					<div id="container-inputs" class="row"></div>
 					<div id="recaptcha"></div>
-					<span class="text-end" id="container-submit"></span>
-					<span class="text-end" id="container-reset"></span>
+					<div class="d-grid gap-2" id="container-submit"></div>
+					<div class="" id="container-reset"></div>
+					<div class="d-grid gap-2 py-5" id="container-redirect"></div>
 				</form>
 			</div>
-			<div class="py-5" style="height: 15vh;">
-				<div class="p-0 text-center" id="container-redirect"></div>
-			</div>
 		</div>
+		<div class="col-xl-8 col-lg-6 col-md-4 col-sm-2 col-xs-0 bg-login text-white"></div>
 	</div>
-
 	<script>
-(() => {
-  'use strict'
+		(() => {
+		'use strict'
 
-  const forms = document.querySelectorAll('.needs-validation')
+		const forms = document.querySelectorAll('.needs-validation')
 
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
+		Array.from(forms).forEach(form => {
+			form.addEventListener('submit', event => {
+			if (!form.checkValidity()) {
+				event.preventDefault()
+				event.stopPropagation()
+			}
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
+			form.classList.add('was-validated')
+			}, false)
+		})
+		})()
 	</script>	
 	<script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="<?= $itemsPage['urlResources'] ?>/Plugins/popper/popper.min.js"></script>

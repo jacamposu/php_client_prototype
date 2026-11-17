@@ -11,43 +11,6 @@ export class Menu {
         this.urlProject = url.GetUrlProject()
     }
 
-    BuildFile = async (url) => { 
-
-        const contenido = `
-        <!DOCTYPE html>
-        <html lang="es">
-        <head>
-        <meta charset="UTF-8">
-        <title>Menu</title>
-        </head>
-        <body>
-        <h1>Menú generado automáticamente</h1>
-        </body>
-        </html>
-        `;
-
-        try {
-            const handle = await window.showSaveFilePicker({
-                suggestedName: "menu.html",
-                types: [
-                    {
-                        description: "Archivo HTML",
-                        accept: {
-                            "text/html": [".html"]
-                        }
-                    }
-                ]
-            });
-
-            const writable = await handle.createWritable();
-            await writable.write(contenido);
-            await writable.close();
-            console.log("Archivo creado correctamente");
-        } catch (error) {
-            console.error("Error al crear el archivo:", error);
-        }
-    }
-
     LoadMenu(content_id) {
         this.firtsLevelMenu.forEach(menu => {
             const div_item = document.createElement("div");
@@ -91,6 +54,7 @@ export class Menu {
             div_floating_submenu.appendChild(div_floating_title);
             div_floating_submenu.id = 'f_' + menu.MenId;
 
+console.log(div_item)
             // document.getElementById(content_id).appendChild(div_item);
 
             // li.onclick = function (e){

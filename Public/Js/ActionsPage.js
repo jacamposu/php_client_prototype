@@ -10,7 +10,7 @@ export class ActionsPage {
 
     constructor() {
         this.token = JSON.parse(localStorage.getItem("PrototypeSessionToken"))
-        this.url = Files.ConvertJsonToObject('http://localhost/DEV/php_client_prototype/Config/Routes.json')
+        this.url = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/Routes.json')
     }
 
     FormAdd = async (url) => {
@@ -226,7 +226,7 @@ export class ActionsPage {
                 'token': this.token
             }
         }
-        
+        console.log(url)
         await fetch(url, settings).then(response => response.json()).then(data => {
             
             if (data.statusCode == 401){

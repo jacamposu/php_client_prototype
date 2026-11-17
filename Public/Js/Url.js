@@ -3,7 +3,7 @@ import { Files } from '../../Public/Js/Files.js';
 export class Url{
 
     constructor() {
-        this.url = Files.ConvertJsonToObject('http://localhost/DEV/php_client_prototype/Config/Routes.json')
+        this.url = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/Routes.json')
     }
 
     GetUrlProject(){

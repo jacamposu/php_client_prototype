@@ -1,9 +1,15 @@
+body{
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
 .container-login {
      display: flex;
      justify-content: center;
      align-items: center;
      /* height: 100vh; */
 }
+
 #page_message{
      font-size: 11px;
 }
@@ -12,6 +18,4 @@
   background: #123240;
 }
 
-body{
-  overflow-x: hidden;
-}
+
