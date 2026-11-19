@@ -6,9 +6,9 @@ import { Files } from '../../Public/Js/Files.js';
 
 export class HtmlButton extends HtmlUtil {
 
-    constructor() {
+    constructor(config) {
         super();
-        this.url = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/Routes.json');
+        this.config = config;
     }
 
     CreateSubmitForm(button,container) {
@@ -75,8 +75,8 @@ export class HtmlButton extends HtmlUtil {
     }
     
     CreateCancelogin(button,container){
-        const link = document.createElement("a");
-        link.href = this.url.project + button.url;
+        const link = document.createElement("a");       
+        link.href = this.config.project + button.url;
         link.className = button.classname;
 
         const icon = document.createElement('em');

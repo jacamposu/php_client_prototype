@@ -7,13 +7,12 @@ import { Events } from '../../Public/Js/Events.js';
 
 export class HtmlForms extends HtmlUtil {
 	
-    constructor(dictionary) {
-        super()
-		let url = new Url()
-		const urlProject = url.GetUrlProject()
-        this.icons = Files.ConvertJsonToObject(urlProject+'/Config/Icons.json')
-		this.dictionary = dictionary
-		this.txt = 'Este campo es obligatorio'
+    constructor(dictionary, config) {
+        super();
+		this.config = config;
+        this.icons = Files.ConvertJsonToObject(this.config.project+'/Config/Icons.json');
+		this.dictionary = dictionary;
+		this.txt = 'Este campo es obligatorio';
     }
     
 	
@@ -67,6 +66,7 @@ export class HtmlForms extends HtmlUtil {
 		return outerDiv;
 	}
 
+
 	Label(inputName, text){
 		let label = document.createElement('label');
 		label.setAttribute('for', inputName);
@@ -74,6 +74,7 @@ export class HtmlForms extends HtmlUtil {
 		return label
 	}
 	
+
 	cuentaCaracteres(name, length){
 		const small = document.createElement("small");
 		small.id = `countChars_${name}`;
@@ -81,6 +82,7 @@ export class HtmlForms extends HtmlUtil {
 		small.textContent = `[0/${length}]`;
 		return small
 	} 
+
 
 	mensajeError(name){
 		const spanError = document.createElement("small");
@@ -90,6 +92,7 @@ export class HtmlForms extends HtmlUtil {
 		return spanError
 	}
 	
+
 	crearIconoAdvertencia(name, text) {
 		const span = document.createElement("span");
 		span.style.cursor = "pointer";
@@ -105,6 +108,7 @@ export class HtmlForms extends HtmlUtil {
 		return span;
 	}
 
+	
 	crearMensajeAyuda(name, text) {
 		const span = document.createElement("span");
 		span.style.cursor = "pointer";

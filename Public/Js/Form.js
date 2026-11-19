@@ -4,7 +4,9 @@ import { Files } from '../../Public/Js/Files.js';
 
 export class Form {
 
-    constructor() {}
+    constructor(config) {
+        this.config = config;
+    }
 
     CreateFields(fields,container){
         const form_id = "formulario";
@@ -33,7 +35,7 @@ export class Form {
     }
 
     RenderInput(field, container) {
-        const input = new InputsForms(field, container);
+        const input = new InputsForms(field, container, this.config);
 
         const inputTypeMap = {
             'Checkbox': () => input.Checkbox(),
@@ -75,7 +77,7 @@ export class Form {
             'TextLogin': () => input.text()
         };
 
-        let dictionary = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/LoginDictionary.json');        
+        let dictionary = Files.ConvertJsonToObject(this.config.project+'Config/LoginDictionary.json');        
         const inputType = dictionary[field.fieldName].inputTypeForm;
         const renderInput = inputTypeMap[inputType] || (() => input.text());
         renderInput();

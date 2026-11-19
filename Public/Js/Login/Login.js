@@ -1,11 +1,13 @@
-import { HtmlButton } from '../../Public/Js/HtmlButton.js';
-import { Form } from '../../Public/Js/Form.js';
+import { HtmlButton } from '../HtmlButton.js';
+import { Form } from '../Form.js';
 
 export class Login {
     
     response = null;
 
-    constructor() {}
+    constructor(config) {
+        this.config = config;
+    }
 
     LoadPage = async() => {
         let url = $("#url").val()
@@ -23,8 +25,8 @@ export class Login {
 
     Create(response) {
         document.getElementById("loadForm").innerHTML = "";
-        let btn = new HtmlButton();
-        let form = new Form();      
+        let btn = new HtmlButton(this.config);
+        let form = new Form(this.config);      
         document.getElementById("app_name").innerHTML = response.appName;
         document.getElementById("page_name").innerHTML = response.titleForm;
         document.getElementById("page_message").innerHTML = response.msgForm;

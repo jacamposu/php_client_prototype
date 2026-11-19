@@ -59,6 +59,7 @@ class Index
     private function LoadPageResources()
 	{
 		$routes = json_decode(file_get_contents('./Config/Routes.json'), true);
+		$config = json_decode(file_get_contents('./Config/Config.json'), true);
 
 		if($this->_controller == 'Login')
 		{
@@ -70,8 +71,8 @@ class Index
 			
 			if(isset($routes[$this->_controller][$this->_method]['view'])){
 				return [
-					'url' => $routes['apiLogin'] . $routes[$this->_controller][$this->_method]['url'].$params ?? '',
-					'urlResources' => $routes['project'].'Public',
+					'url' => $config['apiLogin'] . $routes[$this->_controller][$this->_method]['url'].$params ?? '',
+					'urlResources' => $config['project'].'Public',
 					'page' => $routes[$this->_controller][$this->_method]['view'],
 					'controller' => $this->_controller
 				];
@@ -84,13 +85,13 @@ class Index
 		elseif(isset($routes[$this->_controller]['view']))
 		{
 			return [
-				'urlTable' => $routes['apiCore'] . $routes[$this->_controller]['urlTable'] ?? '',
-				'loadInfo' => $routes['apiCore'] . $routes[$this->_controller]['loadInfo'] ?? '',
-				'urlContext' => $routes['apiCore'] . $routes['Context'] ?? '',
+				'urlTable' => $config['apiCore'] . $routes[$this->_controller]['urlTable'] ?? '',
+				'loadInfo' => $config['apiCore'] . $routes[$this->_controller]['loadInfo'] ?? '',
+				'urlContext' => $config['apiCore'] . $routes['Context'] ?? '',
 				'controller' => $this->_controller,
 				'page' => $routes[$this->_controller]['view'] ?? '',
-				'urlApiCore' => $routes['apiCore'],
-				'urlProject' => $routes['project']
+				'urlApiCore' => $config['apiCore'],
+				'urlProject' => $config['project']
 			];
 		}
 		else

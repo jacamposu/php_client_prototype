@@ -7,6 +7,7 @@ import {UserOptions} from '../../Public/Js/UserOptions.js';
 $(document).ready(async function(){
     const load = new Load();
     const url = new Url();
+    console.log(url)
     const uo = new UserOptions();
 
     // Context

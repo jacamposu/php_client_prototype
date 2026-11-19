@@ -5,10 +5,12 @@ import { ActionsPage } from './ActionsPage.js';
 
 export class Events{
 
-    static SendForm(){
+    static async SendForm(){
         let sa = new SwalAlert();
         dialog_loading.showModal();
-        let url = new Url()
+
+        const url = new Url();
+	    const config = await url.LoadResource('Config/Config.json');
 
         let array = []
         $('#formulario').serializeArray().map(element => {
@@ -37,7 +39,7 @@ export class Events{
         if (!recuperarPassword == 'undefined') 
             post.headers.idUser = recuperarPassword
 
-        const urlSend = url.url.apiLogin + $("#urlActionForm").val();
+        const urlSend = config.apiLogin + $("#urlActionForm").val();
         // console.log(urlSend); return;
         fetch(urlSend, post).then(response => response.json()).then(data => {
             dialog_loading.close()
@@ -46,8 +48,7 @@ export class Events{
                     const payload = Events.parseJwt(data.response.token);
                     localStorage.setItem('PrototypeSessionToken', JSON.stringify(data.response.token))
                     localStorage.setItem('PrototypeSessionUser', JSON.stringify(payload.data))
-                    const urlHome = url.GetUrlProject()
-                    window.location.href = urlHome+"/Home/Home/"
+                    window.location.href = config.project+"/Home/Home/"
                 }else if(data.response.statusCode === 300){
                     localStorage.setItem('RecuperarPassword', JSON.stringify(data.response.user))
                     const urlRedirect = url.url.project + $("#urlRedirect").val();

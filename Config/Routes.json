@@ -1,7 +1,4 @@
 {
-    "apiCore":"http://localhost/api.core/",
-    "apiLogin":"http://localhost/api.login/",
-    "project":"http://localhost/Prototipo/",
     "Login":{
         "Login":{
             "url":"Login/Form/",

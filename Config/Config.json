@@ -12,5 +12,8 @@
         "Auth": "cHJ1ZWJhOjEyMzQ=",
         "Authorization": "Authorization: Basic ",
         "TimeOut": 60
-    }
+    },
+    "apiCore":"http://localhost/DEV/php_api_core/",
+    "apiLogin":"http://localhost/DEV/php_api_login/",
+    "project":"http://localhost/DEV/php_client_prototype/"
 }

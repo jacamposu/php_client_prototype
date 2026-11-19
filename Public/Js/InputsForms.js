@@ -4,19 +4,19 @@ import {Events} from '../../Public/Js/Events.js';
 import {customValidations} from '../../Public/Js/Validations.js';
 import { Files } from '../../Public/Js/Files.js';
 
+export class InputsForms {
 
-export class InputsForms extends HtmlForms {
+    constructor(field, container, config) {
+		this.config = config;
 
-    constructor(field, container) {
-		super(field.metadata);
 		let util = new Util();
 		
 		this.field = field;
 		this.container = container;
 		
-		let dictionary = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/LoginDictionary.json');
+		let dictionary = Files.ConvertJsonToObject(this.config.project+'Config/LoginDictionary.json');
 		this.dictionary = dictionary[field.fieldName];
-		this.htmlform = new HtmlForms(this.dictionary);
+		this.htmlform = new HtmlForms(this.dictionary, config);
 
 		this.id = !util.IsNullOrEmpty(this.dictionary.fieldName) ? this.dictionary.fieldName : null;
 		this.name = !util.IsNullOrEmpty(this.dictionary.fieldName) ? this.dictionary.fieldName : null;
