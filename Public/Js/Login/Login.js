@@ -5,8 +5,10 @@ export class Login {
     
     response = null;
 
-    constructor(config) {
+    constructor(config, dictionary, icons){
         this.config = config;
+        this.dictionary = dictionary;
+        this.icons = icons;
     }
 
     LoadPage = async() => {
@@ -26,7 +28,7 @@ export class Login {
     Create(response) {
         document.getElementById("loadForm").innerHTML = "";
         let btn = new HtmlButton(this.config);
-        let form = new Form(this.config);      
+        let form = new Form(this.config, this.dictionary, this.icons);      
         document.getElementById("app_name").innerHTML = response.appName;
         document.getElementById("page_name").innerHTML = response.titleForm;
         document.getElementById("page_message").innerHTML = response.msgForm;

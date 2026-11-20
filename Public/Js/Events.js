@@ -10,7 +10,13 @@ export class Events{
         dialog_loading.showModal();
 
         const url = new Url();
-	    const config = await url.LoadResource('Config/Config.json');
+	    let config;
+        
+        try{
+		    config = await url.LoadResource('Config/Config.json');
+        }catch (error) {
+            config = await url.LoadResource('../../Config/Config.json');
+        }
 
         let array = []
         $('#formulario').serializeArray().map(element => {
@@ -48,10 +54,10 @@ export class Events{
                     const payload = Events.parseJwt(data.response.token);
                     localStorage.setItem('PrototypeSessionToken', JSON.stringify(data.response.token))
                     localStorage.setItem('PrototypeSessionUser', JSON.stringify(payload.data))
-                    window.location.href = config.project+"/Home/Home/"
+                    window.location.href = config.project + "/Home/Home/"
                 }else if(data.response.statusCode === 300){
                     localStorage.setItem('RecuperarPassword', JSON.stringify(data.response.user))
-                    const urlRedirect = url.url.project + $("#urlRedirect").val();
+                    const urlRedirect = config.project + $("#urlRedirect").val();
                     sa.Redirect(data.response.statusText, data.response.title, data.response.buttonName, data.response.text, urlRedirect)
                 }else if(data.response){
                     sa.Alert(data.response.title, data.response.text, 'success')

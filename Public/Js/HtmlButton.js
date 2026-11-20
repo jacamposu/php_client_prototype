@@ -25,7 +25,7 @@ export class HtmlButton extends HtmlUtil {
         
         document.getElementById(container).appendChild(btnForm);
 
-        const action = new ActionsPage();
+        const action = new ActionsPage(this.config);
         btnForm.onclick = function ()
         {
             if(button.event != '')

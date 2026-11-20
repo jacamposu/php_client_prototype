@@ -1,27 +1,36 @@
 import { Load } from '../../Public/Js/Load.js';
 import { ActionsPage } from '../../Public/Js/ActionsPage.js';
 import { Url } from '../../Public/Js/Url.js';
-import {UserOptions} from '../../Public/Js/UserOptions.js';
+import { UserOptions } from '../../Public/Js/UserOptions.js';
+import { Files } from '../../Public/Js/Files.js';
 
 
 $(document).ready(async function(){
-    const load = new Load();
     const url = new Url();
-    console.log(url)
-    const uo = new UserOptions();
+    let config;
+
+    try{
+		config = await url.LoadResource('Config/Config.json');
+	}catch (error) {
+		config = await url.LoadResource('../../Config/Config.json');
+	}
+
+    const routes = Files.ConvertJsonToObject(config.project + 'Config/Routes.json');
+    const dictionary = Files.ConvertJsonToObject(config.project + 'Config/LoginDictionary.json');
+    const icons = Files.ConvertJsonToObject(config.project + 'Config/Icons.json');
+
+    const load = new Load(config);
+    const uo = new UserOptions(config, icons);
 
     // Context
     if (!localStorage.getItem("PrototpeContext")) {
-        const urlApiCore = url.GetUrlApiCore();
-        await load.GetContext(urlApiCore+'/Context/All/');
+        await load.GetContext(config.apiCore + 'Context/All/');
     }
 
     const context = JSON.parse(localStorage.getItem("PrototpeContext"));
     const Session_User = JSON.parse(localStorage.getItem("PrototypeSessionUser"));
 
-    // load.Menu(context);
-
-    // uo.optionsMenu(context);
+    uo.optionsMenu(context);
 
     load.Profile(context);
 
@@ -29,7 +38,7 @@ $(document).ready(async function(){
 
     // load table
     if(!window.location.href.includes("Home/Home")){
-        const action = new ActionsPage();
+        const action = new ActionsPage(config);
         action.CreateTable($("#urlTable").val());
     }else{
         
@@ -46,11 +55,11 @@ $(document).ready(async function(){
 
 
 
-    // const tohome = document.getElementById('link_home');
-    // tohome.href = "http://localhost/Prototipo/Home/Home/";
-    // tohome.setAttribute("data-toggle", "tooltip");
-    // tohome.setAttribute("data-placement", "right");
-    // tohome.title = "Ir al inicio";
+    const tohome = document.getElementById('link_home');
+    tohome.href = config.project + "Home/Home/";
+    tohome.setAttribute("data-toggle", "tooltip");
+    tohome.setAttribute("data-placement", "right");
+    tohome.title = "Ir al inicio";
 
     // const conf = document.getElementById('btn_configuration');
     // conf.setAttribute("data-toggle", "tooltip");
@@ -58,8 +67,8 @@ $(document).ready(async function(){
     // conf.title = "Configuración";
 
     // menu show/hide
-    // const projectName = document.getElementById('project_name');
-    // projectName.textContent = " PROTOTIPO";
+    const projectName = document.getElementById('project_name');
+    projectName.textContent = " "+config.AppName;
 
     // const environment = document.getElementById('environment_text');
     // environment.textContent = 'DEV';

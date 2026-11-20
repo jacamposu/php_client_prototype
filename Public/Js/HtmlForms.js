@@ -7,11 +7,11 @@ import { Events } from '../../Public/Js/Events.js';
 
 export class HtmlForms extends HtmlUtil {
 	
-    constructor(dictionary, config) {
+    constructor(dictionary, config, icons) {
         super();
 		this.config = config;
-        this.icons = Files.ConvertJsonToObject(this.config.project+'/Config/Icons.json');
 		this.dictionary = dictionary;
+		this.icons = icons;
 		this.txt = 'Este campo es obligatorio';
     }
     

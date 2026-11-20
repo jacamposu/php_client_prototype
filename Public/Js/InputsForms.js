@@ -2,46 +2,47 @@ import { HtmlForms } from '../../Public/Js/HtmlForms.js';
 import { Util } from '../../Public/Js/Util.js';
 import {Events} from '../../Public/Js/Events.js';
 import {customValidations} from '../../Public/Js/Validations.js';
-import { Files } from '../../Public/Js/Files.js';
+
 
 export class InputsForms {
 
-    constructor(field, container, config) {
-		this.config = config;
-
-		let util = new Util();
-		
+    constructor(field, container, config, dictionary, icons) {
 		this.field = field;
 		this.container = container;
-		
-		let dictionary = Files.ConvertJsonToObject(this.config.project+'Config/LoginDictionary.json');
-		this.dictionary = dictionary[field.fieldName];
-		this.htmlform = new HtmlForms(this.dictionary, config);
+		this.config = config;
+		this.dictionary = dictionary;
+		this.icons = icons;
 
-		this.id = !util.IsNullOrEmpty(this.dictionary.fieldName) ? this.dictionary.fieldName : null;
-		this.name = !util.IsNullOrEmpty(this.dictionary.fieldName) ? this.dictionary.fieldName : null;
+		const util = new Util();
+		const dictionaryField = this.dictionary[field.fieldName];
 		
-		if(this.dictionary){
-			this.description = !util.IsNullOrEmpty(this.dictionary.desc) ? this.dictionary.desc : null;
-			this.simpleId = !util.IsNullOrEmpty(this.dictionary.fieldName) ? this.dictionary.fieldName : null;
-			this.length = !util.IsNullOrEmpty(this.dictionary.length) ? this.dictionary.length : null;
-			this.maxlength = !util.IsNullOrEmpty(this.length) ? this.length : null;
-			this.minValue = !util.IsNullOrEmpty(this.dictionary.unsigned) ? 0 : null;
-			this.placeholder = !util.IsNullOrEmpty(this.dictionary.placeholder) ? this.dictionary.placeholder : null;
-			this.title = !util.IsNullOrEmpty(this.dictionary.placeholder) ? this.dictionary.placeholder : null;
-			this.readOnly = !util.IsNullOrEmpty(this.dictionary.readonly) ? this.dictionary.readonly : null;
-			this.required = !util.IsNullOrEmpty(this.dictionary.required) ? this.dictionary.required : null;
-			this.rows = !util.IsNullOrEmpty(this.dictionary.textareaRows) ? this.dictionary.textareaRows : null;
-			this.columns = !util.IsNullOrEmpty(this.dictionary.textareaChars) ? this.dictionary.textareaChars : null;
+		this.htmlform = new HtmlForms(dictionaryField, config, icons);
+		
+		if(dictionaryField){
+			this.id = !util.IsNullOrEmpty(dictionaryField.fieldName) ? dictionaryField.fieldName : null;
+			this.name = !util.IsNullOrEmpty(dictionaryField.fieldName) ? dictionaryField.fieldName : null;
+			this.description = !util.IsNullOrEmpty(dictionaryField.desc) ? dictionaryField.desc : null;
+			this.simpleId = !util.IsNullOrEmpty(dictionaryField.fieldName) ? dictionaryField.fieldName : null;
+			this.length = !util.IsNullOrEmpty(dictionaryField.length) ? dictionaryField.length : null;
+			this.maxlength = !util.IsNullOrEmpty(dictionaryField.length) ? dictionaryField.length : null;
+			this.minValue = !util.IsNullOrEmpty(dictionaryField.unsigned) ? 0 : null;
+			this.placeholder = !util.IsNullOrEmpty(dictionaryField.placeholder) ? dictionaryField.placeholder : null;
+			this.title = !util.IsNullOrEmpty(dictionaryField.placeholder) ? dictionaryField.placeholder : null;
+			this.readOnly = !util.IsNullOrEmpty(dictionaryField.readonly) ? dictionaryField.readonly : null;
+			this.required = !util.IsNullOrEmpty(dictionaryField.required) ? dictionaryField.required : null;
+			this.rows = !util.IsNullOrEmpty(dictionaryField.textareaRows) ? dictionaryField.textareaRows : null;
+			this.columns = !util.IsNullOrEmpty(dictionaryField.textareaChars) ? dictionaryField.textareaChars : null;
+			this.pattern = !util.IsNullOrEmpty(dictionaryField.pattern) ? dictionaryField.pattern : null;
+			this.mode = !util.IsNullOrEmpty(dictionaryField.inputTypeForm) ? dictionaryField.inputTypeForm : '';
+			this.validationForm = !util.IsNullOrEmpty(dictionaryField.validationForm) ? dictionaryField.validationForm : '';
+
 			this.disabled = !util.IsNullOrEmpty(field.disabled) ? field.disabled : null;
 			this.value = !util.IsNullOrEmpty(field.value) ? field.value : null;
 			this.valueTXA = !util.IsNullOrEmpty(field.value) ? field.value : '';
-			this.checked = /*!util.IsEmptyOrNull(dictionary.text) ? 'checked="checked"' :*/ '';
-			this.pattern = !util.IsNullOrEmpty(this.dictionary.pattern) ? this.dictionary.pattern : null;
-			this.mode = !util.IsNullOrEmpty(this.dictionary.inputTypeForm) ? this.dictionary.inputTypeForm : '';
+
 			this.selectMultiple = this.mode == 'selectMultiple' ? 'multiple' : '';
-			this.countChars = 0//this.countChars(this.simpleId, this.value.length, this.length);
-			this.validationForm = !util.IsNullOrEmpty(this.dictionary.validationForm) ? this.dictionary.validationForm : '';
+			this.countChars = 0;//this.countChars(this.simpleId, this.value.length, this.length);
+			this.checked = '';/*!util.IsEmptyOrNull(dictionary.text) ? 'checked="checked"' :*/ 
 		}
     }
 
