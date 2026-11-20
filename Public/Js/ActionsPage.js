@@ -8,9 +8,9 @@ import { Files } from '../../Public/Js/Files.js';
 
 export class ActionsPage {
 
-    constructor() {
-        this.token = JSON.parse(localStorage.getItem("PrototypeSessionToken"))
-        this.url = Files.ConvertJsonToObject('http://localhost/Prototipo/Config/Routes.json')
+    constructor(config) {
+        this.token = JSON.parse(localStorage.getItem("PrototypeSessionToken"));
+        this.config = config;
     }
 
     FormAdd = async (url) => {
@@ -213,7 +213,7 @@ export class ActionsPage {
 
     CreateTable = async(url, orderBy='', numPage='') => {
         dialog_loading.showModal();
-        var table = new Table();
+        var table = new Table(this.config);
         $("#content-preload").removeClass("d-none");
         url = (orderBy != '') ? url+'orderby='+orderBy+'/' : url
         url = (numPage != '') ? url+numPage+'/' : url+'page=1/'
@@ -226,7 +226,7 @@ export class ActionsPage {
                 'token': this.token
             }
         }
-        console.log(url)
+        // console.log(url)
         await fetch(url, settings).then(response => response.json()).then(data => {
             
             if (data.statusCode == 401){

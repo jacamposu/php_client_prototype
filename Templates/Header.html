@@ -4,16 +4,18 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="logo">
-            <img src="../../Public/Img/Icons/Icon.png" class="navbar-brand-img" alt="main_logo" width="25px">
-            Proyecto
+            <a class="text-decoration-none text-muted" id="link_home">
+                <img src="../../Public/Img/Icons/Icon.png" class="navbar-brand-img" alt="main_logo" width="25px">
+                <span id="project_name"></span>
+            </a>
         </div>
-        <div class="breadcrumbs5">
+        <!-- <div class="breadcrumbs5 text-muted">
             Home
             <span>/</span>
             Usuarios
             <span>/</span>
             Agregar
-        </div>
+        </div> -->
     </div>
     <div class="right-section">
         <input type="text" class="search-box" placeholder="Search">
@@ -30,15 +32,16 @@
         <div class="user-wrapper">
             <button id="userBtn" class="user-circle">AS</button>
             <div id="userDropdown" class="user-dropdown">
-                <div class="user-info">
-                    <img src="../../Public/Img/Icons/Icon.png" class="user-avatar" alt="user_avatar">   
-                    <strong>Administrador Sistema</strong>
-                    <small>carlos.jimenez@empresa.com</small>
+                <div class="user-info" id="link-uo">
+                    <!-- <img src="../../Public/Img/Icons/Icon.png" class="user-avatar" alt="user_avatar">    -->
+                    <!-- <strong>Administrador Sistema</strong> -->
+                    <!-- <small>carlos.jimenez@empresa.com</small> -->
                 </div>
                 <hr>
-                <a href="#">Mi Perfil</a>
+                <!-- <a href="#">Mi Perfil</a>
                 <a href="#">Configuración</a>
-                <a href="#" onclick="logout()">Cerrar Sesión</a>
+                <a href="#" onclick="logout()">Cerrar Sesión</a> -->
+                <div id="div_links"></div>
             </div>
         </div>
     </div>

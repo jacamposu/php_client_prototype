@@ -6,7 +6,9 @@ import { Url } from '../../Public/Js/Url.js';
 
 export class UserOptions{
 
-    constructor(){
+    constructor(config, icons){
+        this.config = config;
+        this.icons = icons;
         this.settings = {
             method: 'GET',
             headers: {
@@ -56,12 +58,12 @@ export class UserOptions{
         this.Acceso(user_options[0], "div_links");
         this.Acceso(user_options[1], "div_links");
         this.Acceso(user_options[2], "div_links");
-        // this.ButtonExit("div_links");
+        this.ButtonExit("div_links");
     }
 
     configuration = (context) => {
         context.response.userOptions.conf.forEach(function(item){
-            const icon = icons[item.icon];
+            const icon = this.icons[item.icon];
             const titleLink = item.text;
             
             const id = "box_icon_"+counter;
@@ -95,7 +97,7 @@ export class UserOptions{
     }
 
     ButtonExit(container){
-        const load = new Load();
+        const load = new Load(this.config);
 
         let divExit = document.createElement("div");
         divExit.id = "exit";
@@ -158,8 +160,6 @@ export class UserOptions{
     }
 
     HomeOption = (element) => {
-        const icons = Files.ConvertJsonToObject('../../Config/Icons.json');
-
         const div_content = document.createElement("div");
         div_content.className = "col-12";
 
@@ -172,7 +172,7 @@ export class UserOptions{
         div_row.appendChild(div_icon);
 
         const em = document.createElement("em");
-        em.className = icons[element.icon.icon] + " " + element.icon.size + " " + element.icon.colortext;
+        em.className = this.icons[element.icon.icon] + " " + element.icon.size + " " + element.icon.colortext;
         div_icon.appendChild(em);
 
         const div_description = document.createElement("div");
@@ -273,13 +273,12 @@ export class UserOptions{
 
     MyProfile = (container) => {
         const fn = new Functions();
-        const urlProject = this.url.GetUrlProject();
         const Session_User = JSON.parse(localStorage.getItem("PrototypeSessionUser"));
         const infoUser = Session_User;
 
         const image = document.createElement("img");
         // image.src = urlProject + `/Public/Img/Photos/${infoUser.UsrPhoto}`;
-        image.src = urlProject + `/Public/Img/Photos/610d453bb7bdf.jpg`;
+        image.src = this.config.project + `/Public/Img/Photos/610d453bb7bdf.jpg`;
         image.alt = "user-photo";
         image.style.width = "80px";
         image.className = "rounded cursor-pointer";
@@ -334,7 +333,7 @@ export class UserOptions{
         table.appendChild(tbody);
 
         tbody.appendChild(fn.CreateRowTwoColumns("Id usuario", infoUser.UseId));
-        tbody.appendChild(fn.CreateRowTwoColumns("Celular", infoUser.UseDatCellphone));
+        // tbody.appendChild(fn.CreateRowTwoColumns("Celular", infoUser.UseDatCellphone));
         tbody.appendChild(fn.CreateRowTwoColumns("Ultimo acceso", infoUser.UseLastAccess));
         // tbody.appendChild(fn.CreateRowTwoColumns("Documento", infoUser.UsrIdentificationNumber));
         // tbody.appendChild(fn.CreateRowTwoColumns("Tipo de documento", infoUser.ItDescription));
@@ -455,8 +454,7 @@ export class UserOptions{
     }
 
     Enlace = (item, container) => {
-        const icons = Files.ConvertJsonToObject('../../Config/Icons.json');
-        const icon = icons[item.icon];
+        const icon = this.icons[item.icon];
         const titleLink = item.text;
 
         const boxIcon = document.createElement("div");
@@ -487,8 +485,7 @@ export class UserOptions{
 
     Acceso = (data, container) => {
         const settings = this.settings;
-        const icons = Files.ConvertJsonToObject('../../Config/Icons.json');
-        const icon = icons[data.icon];
+        const icon = this.icons[data.icon];
         const urls = this.url;
         const fn = new Functions();
 

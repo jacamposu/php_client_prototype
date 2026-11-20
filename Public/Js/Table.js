@@ -3,9 +3,8 @@ import { ActionsPage } from './ActionsPage.js';
 
 
 export class Table {
-    constructor() {
-        this.icons = Files.ConvertJsonToObject('../../Config/Icons.json')
-        this.url = Files.ConvertJsonToObject('../../Config/Routes.json')
+    constructor(config) {
+        this.config = config;
     }
 
     createTable(data,container,table_id){
@@ -226,7 +225,7 @@ export class Table {
         document.getElementById(container).appendChild(li);
 
         // EVENTOS
-        const actionPage = new ActionsPage();
+        const actionPage = new ActionsPage(this.config);
         // const functionName = ;
         a.onclick = function(){
             try {
@@ -315,7 +314,6 @@ export class Table {
     }
 
     CreateVerticalTable(data,table_id,container){
-        const icons = Files.ConvertJsonToObject('../../Config/Icons.json')
         this.tableStructure(table_id,container);
 
         let count = 0;

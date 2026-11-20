@@ -9,7 +9,7 @@ import { HtmlButton } from '../../Public/Js/HtmlButton.js';
 
 export class Load{
 
-    constructor(){
+    constructor(config){
         this.settings = {
             method: 'GET',
             headers: {
@@ -17,11 +17,11 @@ export class Load{
                 'Content-Type': 'application/json',
                 'token': JSON.parse(localStorage.getItem("PrototypeSessionToken"))
             }
-        }; 
+        };
+        this.config = config;
     }
 
     GetContext = async (urlContext) => {
-        console.log(urlContext)
         await fetch(urlContext, this.settings).then(response => response.json()).then(data => {
             if(data.statusCode == 200){
                 localStorage.setItem('PrototpeContext', JSON.stringify(data));
@@ -65,19 +65,20 @@ export class Load{
     }
 
     CloseSession = async () => {
-        this.url = new Url();
-        let session = JSON.parse(localStorage.getItem("PrototypeSessionToken"))
-        session = JSON.parse(atob(session.split('.')[1]))
-        this.settings.headers.user_id = session.data.UserIdEncrypt
-        this.settings.headers.UseLastAccess = session.data.UseLastAccess
-        const urlApiLogin = this.url.GetUrlApiLogin() + '/Login/Logout/';
-        
+        let session = JSON.parse(localStorage.getItem("PrototypeSessionToken"));
+        session = JSON.parse(atob(session.split('.')[1]));
+        this.settings.headers.user_id = session.data.UserIdEncrypt;
+        this.settings.headers.UseLastAccess = session.data.UseLastAccess;
+        this.settings.headers.loginId = session.data.LoginId;
+        this.settings.method = 'POST';
+        const urlApiLogin = this.config.apiLogin + '/Login/Logout/';
+
         await fetch(urlApiLogin, this.settings).then(response => response.json()).then(data => {
             if(data.statusCode == 200){
                 localStorage.removeItem("PrototypeSessionToken")
                 localStorage.removeItem("PrototypeSessionUser")
                 localStorage.removeItem("PrototpeContext")
-                window.location.href = this.url.GetUrlProject()
+                window.location.href = this.config.project
             }
         }).catch(err => {
             console.log("ERROR: ", err)
@@ -122,7 +123,7 @@ export class Load{
         document.getElementById("navigation_table").appendChild(button)
 
         // Evento onclick
-        const action = new ActionsPage()
+        const action = new ActionsPage(this.config)
         button.onclick = function () {
             action.FormAdd(element.params.url)
         };
@@ -182,7 +183,7 @@ export class Load{
         document.getElementById("navigation_table").appendChild(button)
 
         // Evento onclick
-        const action = new ActionsPage()
+        const action = new ActionsPage(this.config)
         button.onclick = function () {
             action.LoadModalActionPage(element.url);
         };
@@ -226,7 +227,7 @@ export class Load{
     }
 
     Exit(){
-        const load = new Load()
+        const load = new Load(this.config)
         load.ConfirmExit()
     }
 }
